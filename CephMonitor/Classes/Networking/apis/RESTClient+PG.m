@@ -56,7 +56,7 @@
  *  @param response is a callback
  */
 - (void)placemnetGroupMappinID:(NSInteger )pgid response:(RESTResponse)response {
-    NSString *url = [NSString stringWithFormat:@"/pg/map?pgid=%ld", pgid];
+    NSString *url = [NSString stringWithFormat:@"/pg/map?pgid=%ld", (long)pgid];
     [self requestURL:url method:RESTRequestGET parameters:nil success:^(id responseObject) {
         response(responseObject);
     }];

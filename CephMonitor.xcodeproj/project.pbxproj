@@ -25,6 +25,8 @@
 		B04F342D1B1EE73800F9E9EB /* RESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34261B1EE73800F9E9EB /* RESTClient.m */; };
 		B04F34321B1EEEBC00F9E9EB /* OSDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34311B1EEEBC00F9E9EB /* OSDTableViewController.m */; };
 		B04F34361B1EF84C00F9E9EB /* OSDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34351B1EF84C00F9E9EB /* OSDTableViewCell.m */; };
+		B04F34421B1F1F4200F9E9EB /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34411B1F1F4200F9E9EB /* BaseModel.m */; };
+		B04F34451B1F211200F9E9EB /* OSDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34441B1F211200F9E9EB /* OSDModel.m */; };
 		DFAADC2FBAE0B2E0DB8BF0DA /* libPods-CephMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,10 @@
 		B04F34311B1EEEBC00F9E9EB /* OSDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDTableViewController.m; sourceTree = "<group>"; };
 		B04F34341B1EF84C00F9E9EB /* OSDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDTableViewCell.h; sourceTree = "<group>"; };
 		B04F34351B1EF84C00F9E9EB /* OSDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDTableViewCell.m; sourceTree = "<group>"; };
+		B04F34401B1F1F4200F9E9EB /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		B04F34411B1F1F4200F9E9EB /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		B04F34431B1F211200F9E9EB /* OSDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDModel.h; sourceTree = "<group>"; };
+		B04F34441B1F211200F9E9EB /* OSDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,10 @@
 		B04F34051B1EE69800F9E9EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B04F34401B1F1F4200F9E9EB /* BaseModel.h */,
+				B04F34411B1F1F4200F9E9EB /* BaseModel.m */,
+				B04F34431B1F211200F9E9EB /* OSDModel.h */,
+				B04F34441B1F211200F9E9EB /* OSDModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -410,10 +420,12 @@
 			files = (
 				B04F34291B1EE73800F9E9EB /* RESTClient+OSD.m in Sources */,
 				B04F33E21B1EE4CB00F9E9EB /* AppDelegate.m in Sources */,
+				B04F34421B1F1F4200F9E9EB /* BaseModel.m in Sources */,
 				B04F342C1B1EE73800F9E9EB /* RESTClient+Tell.m in Sources */,
 				B04F34151B1EE6E400F9E9EB /* UIImage+Extra.m in Sources */,
 				B04F342B1B1EE73800F9E9EB /* RESTClient+Root.m in Sources */,
 				B04F34131B1EE6E400F9E9EB /* UIColor+Extra.m in Sources */,
+				B04F34451B1F211200F9E9EB /* OSDModel.m in Sources */,
 				B04F34361B1EF84C00F9E9EB /* OSDTableViewCell.m in Sources */,
 				B04F34161B1EE6E400F9E9EB /* UIView+Layout.m in Sources */,
 				B04F34141B1EE6E400F9E9EB /* UIFont+Extra.m in Sources */,

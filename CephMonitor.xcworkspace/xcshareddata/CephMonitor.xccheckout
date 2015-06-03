@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BEA72AE2-0340-404C-B23D-6E2D0A53B1A0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CephMonitor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FEC111D2E787C10CD7197D568EB8A16DE4EC981B</key>
+		<string>http://ssteam-git.no-ip.org/kairen/ceph-monitor-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CephMonitor.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FEC111D2E787C10CD7197D568EB8A16DE4EC981B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://ssteam-git.no-ip.org/kairen/ceph-monitor-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FEC111D2E787C10CD7197D568EB8A16DE4EC981B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FEC111D2E787C10CD7197D568EB8A16DE4EC981B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CephMonitor</string>
+		</dict>
+	</array>
+</dict>
+</plist>

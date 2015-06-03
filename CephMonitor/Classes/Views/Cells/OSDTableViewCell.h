@@ -11,7 +11,7 @@
 @interface OSDTableViewCell : UITableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier height:(CGFloat)height;
-
+- (void)setKeyTitles:(NSArray *)keyTitles values:(NSArray *)values;
 
 @property (nonatomic, strong) UIView *contentBackgroundView;
 @property (nonatomic, strong) UIView *titleBackgroundView;

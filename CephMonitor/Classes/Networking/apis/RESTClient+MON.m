@@ -19,7 +19,7 @@
  *  @param response is a callback
  */
 - (void)monitorDumpEpoch:(NSInteger)epoch response:(RESTResponse)response {
-    NSString *url = (epoch)? [NSString stringWithFormat:@"/mon/dump?epoch=%ld", epoch]: @"/mon/dump";
+    NSString *url = (epoch)? [NSString stringWithFormat:@"/mon/dump?epoch=%ld", (long)epoch]: @"/mon/dump";
     [self requestURL:url method:RESTRequestGET parameters:nil success:^(id responseObject) {
         response(responseObject);
     }];

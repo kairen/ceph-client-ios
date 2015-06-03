@@ -74,7 +74,7 @@
  *  @param response is a callback
  */
 - (void)objectStorageDumpEpoch:(NSInteger)epoch response:(RESTResponse)response {
-    NSString *url = (epoch)? [NSString stringWithFormat:@"/osd/dump?epoch=%ld", epoch]: @"/osd/dump";
+    NSString *url = (epoch != -1)? [NSString stringWithFormat:@"/osd/dump?epoch=%ld", (long)epoch]: @"/osd/dump";
     [self requestURL:url method:RESTRequestGET parameters:nil success:^(id responseObject) {
         response(responseObject);
     }];
@@ -87,7 +87,20 @@
  *  @param response is a callback
  */
 - (void)objectStorageFind:(NSInteger)osdId response:(RESTResponse)response {
-    NSString *url = [NSString stringWithFormat:@"/osd/find?id=%ld", osdId];
+    NSString *url = [NSString stringWithFormat:@"/osd/find?id=%ld", (long)osdId];
+    [self requestURL:url method:RESTRequestGET parameters:nil success:^(id responseObject) {
+        response(responseObject);
+    }];
+}
+
+/**
+ *  Fetch metadata for osd <id>
+ *
+ *  @param osdId    is a osd id
+ *  @param response is a callback
+ */
+- (void)objectStorageMetadataFind:(NSInteger)osdId response:(RESTResponse)response {
+    NSString *url = [NSString stringWithFormat:@"/osd/metadata?id=%ld", (long)osdId];
     [self requestURL:url method:RESTRequestGET parameters:nil success:^(id responseObject) {
         response(responseObject);
     }];

@@ -22,16 +22,20 @@
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:alpah];
 }
 
-+ (UIColor *)customRedColor {
-    return [UIColor colorWithRGBHex:@"#dd4b39" alpha:1.0];
-}
-
 + (UIColor *)pageBackgroudColor {
     return [UIColor colorWithRGBHex:@"#C8CCD7" alpha:1.0];
 }
 
++ (UIColor *)customRedColor {
+    return [UIColor colorWithRGBHex:@"#dd4b39" alpha:1.0];
+}
+
 + (UIColor *)customGreenColor {
     return [UIColor colorWithRGBHex:@"#00a65a" alpha:1.0];
+}
+
++ (UIColor *)customBlueColor {
+    return [UIColor colorWithRGBHex:@"#0073b7" alpha:1.0];
 }
 
 @end

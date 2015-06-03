@@ -31,7 +31,7 @@
  *  @param response is a callback
  */
 - (void)metadataServerDumpEpoch:(NSInteger)epoch response:(RESTResponse)response {
-    NSString *url = (epoch)? [NSString stringWithFormat:@"/mds/dump?epoch=%ld", epoch]: @"/mds/dump";
+    NSString *url = (epoch)? [NSString stringWithFormat:@"/mds/dump?epoch=%ld", (long)epoch]: @"/mds/dump";
     [self requestURL:url method:RESTRequestGET parameters:nil success:^(id responseObject) {
         response(responseObject);
     }];

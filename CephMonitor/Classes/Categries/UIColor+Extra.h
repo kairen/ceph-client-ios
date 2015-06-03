@@ -13,8 +13,9 @@
 + (UIColor *)colorWithIntegerRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpah;
 + (UIColor *)colorWithRGBHex:(NSString *)hex alpha:(CGFloat)alpah;
 
-+ (UIColor *)customRedColor;
 + (UIColor *)pageBackgroudColor;
++ (UIColor *)customRedColor;
 + (UIColor *)customGreenColor;
++ (UIColor *)customBlueColor;
 
 @end

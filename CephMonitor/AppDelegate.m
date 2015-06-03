@@ -10,7 +10,7 @@
 #import "OSDTableViewController.h"
 #import "RESTClient.h"
 
-static NSString * const RESTIPAddress = @"http://163.17.136.249:5100";
+static NSString * const RESTIPAddress = @"http://163.17.136.249:8080";
 
 @interface AppDelegate ()
 

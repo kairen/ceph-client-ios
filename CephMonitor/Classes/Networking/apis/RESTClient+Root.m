@@ -67,7 +67,7 @@
  *  @param response is a callback
  */
 - (void)clusterReport:(NSInteger)tag response:(RESTResponse)response {
-    NSString *url = (tag) ? [NSString stringWithFormat:@"/report?tag=%ld", tag]: @"/report";
+    NSString *url = (tag) ? [NSString stringWithFormat:@"/report?tag=%ld", (long)tag]: @"/report";
     [self requestURL:url method:RESTRequestGET parameters:nil success:^(id responseObject) {
         response(responseObject);
     }];

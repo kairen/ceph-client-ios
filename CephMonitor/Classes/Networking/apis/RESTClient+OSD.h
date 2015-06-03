@@ -18,6 +18,8 @@
 - (void)objectStorageTreeWithResponse:(RESTResponse)response;
 - (void)objectStorageDumpEpoch:(NSInteger)epoch response:(RESTResponse)response;
 - (void)objectStorageFind:(NSInteger)osdId response:(RESTResponse)response;
+- (void)objectStorageMetadataFind:(NSInteger)osdId response:(RESTResponse)response;
+
 
 - (void)objectStorageCrushDumpWithResponse:(RESTResponse)response;
 - (void)objectStorageCrushRuleListWithResponse:(RESTResponse)response;
