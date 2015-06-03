@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OSDTableViewController.h
 //  CephMonitor
 //
 //  Created by KaiRen.Bai on 2015/6/3.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface OSDTableViewController : UITableViewController
 
 @end
-

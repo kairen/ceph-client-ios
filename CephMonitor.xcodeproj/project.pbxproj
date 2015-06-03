@@ -9,11 +9,23 @@
 /* Begin PBXBuildFile section */
 		B04F33DF1B1EE4CB00F9E9EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F33DE1B1EE4CB00F9E9EB /* main.m */; };
 		B04F33E21B1EE4CB00F9E9EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F33E11B1EE4CB00F9E9EB /* AppDelegate.m */; };
-		B04F33E51B1EE4CB00F9E9EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F33E41B1EE4CB00F9E9EB /* ViewController.m */; };
-		B04F33E81B1EE4CB00F9E9EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04F33E61B1EE4CB00F9E9EB /* Main.storyboard */; };
 		B04F33EA1B1EE4CB00F9E9EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04F33E91B1EE4CB00F9E9EB /* Images.xcassets */; };
 		B04F33ED1B1EE4CB00F9E9EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04F33EB1B1EE4CB00F9E9EB /* LaunchScreen.xib */; };
 		B04F33F91B1EE4CB00F9E9EB /* CephMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F33F81B1EE4CB00F9E9EB /* CephMonitorTests.m */; };
+		B04F34131B1EE6E400F9E9EB /* UIColor+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F340C1B1EE6E400F9E9EB /* UIColor+Extra.m */; };
+		B04F34141B1EE6E400F9E9EB /* UIFont+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F340E1B1EE6E400F9E9EB /* UIFont+Extra.m */; };
+		B04F34151B1EE6E400F9E9EB /* UIImage+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34101B1EE6E400F9E9EB /* UIImage+Extra.m */; };
+		B04F34161B1EE6E400F9E9EB /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34121B1EE6E400F9E9EB /* UIView+Layout.m */; };
+		B04F34271B1EE73800F9E9EB /* RESTClient+MDS.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F341A1B1EE73800F9E9EB /* RESTClient+MDS.m */; };
+		B04F34281B1EE73800F9E9EB /* RESTClient+MON.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F341C1B1EE73800F9E9EB /* RESTClient+MON.m */; };
+		B04F34291B1EE73800F9E9EB /* RESTClient+OSD.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F341E1B1EE73800F9E9EB /* RESTClient+OSD.m */; };
+		B04F342A1B1EE73800F9E9EB /* RESTClient+PG.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34201B1EE73800F9E9EB /* RESTClient+PG.m */; };
+		B04F342B1B1EE73800F9E9EB /* RESTClient+Root.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34221B1EE73800F9E9EB /* RESTClient+Root.m */; };
+		B04F342C1B1EE73800F9E9EB /* RESTClient+Tell.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34241B1EE73800F9E9EB /* RESTClient+Tell.m */; };
+		B04F342D1B1EE73800F9E9EB /* RESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34261B1EE73800F9E9EB /* RESTClient.m */; };
+		B04F34321B1EEEBC00F9E9EB /* OSDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34311B1EEEBC00F9E9EB /* OSDTableViewController.m */; };
+		B04F34361B1EF84C00F9E9EB /* OSDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34351B1EF84C00F9E9EB /* OSDTableViewCell.m */; };
+		DFAADC2FBAE0B2E0DB8BF0DA /* libPods-CephMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +39,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CephMonitor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C23F11D268A6D7DEDD2CC3 /* Pods-CephMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CephMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-CephMonitor/Pods-CephMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		883E5E6D07738F4AA0A9A324 /* Pods-CephMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CephMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CephMonitor/Pods-CephMonitor.debug.xcconfig"; sourceTree = "<group>"; };
 		B04F33D91B1EE4CB00F9E9EB /* CephMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CephMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04F33DD1B1EE4CB00F9E9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B04F33DE1B1EE4CB00F9E9EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B04F33E01B1EE4CB00F9E9EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B04F33E11B1EE4CB00F9E9EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B04F33E31B1EE4CB00F9E9EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B04F33E41B1EE4CB00F9E9EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B04F33E71B1EE4CB00F9E9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B04F33E91B1EE4CB00F9E9EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B04F33EC1B1EE4CB00F9E9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B04F33F21B1EE4CB00F9E9EB /* CephMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CephMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04F33F71B1EE4CB00F9E9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B04F33F81B1EE4CB00F9E9EB /* CephMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CephMonitorTests.m; sourceTree = "<group>"; };
+		B04F340B1B1EE6E400F9E9EB /* UIColor+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extra.h"; sourceTree = "<group>"; };
+		B04F340C1B1EE6E400F9E9EB /* UIColor+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extra.m"; sourceTree = "<group>"; };
+		B04F340D1B1EE6E400F9E9EB /* UIFont+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extra.h"; sourceTree = "<group>"; };
+		B04F340E1B1EE6E400F9E9EB /* UIFont+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Extra.m"; sourceTree = "<group>"; };
+		B04F340F1B1EE6E400F9E9EB /* UIImage+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extra.h"; sourceTree = "<group>"; };
+		B04F34101B1EE6E400F9E9EB /* UIImage+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extra.m"; sourceTree = "<group>"; };
+		B04F34111B1EE6E400F9E9EB /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		B04F34121B1EE6E400F9E9EB /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		B04F34191B1EE73800F9E9EB /* RESTClient+MDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RESTClient+MDS.h"; sourceTree = "<group>"; };
+		B04F341A1B1EE73800F9E9EB /* RESTClient+MDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RESTClient+MDS.m"; sourceTree = "<group>"; };
+		B04F341B1B1EE73800F9E9EB /* RESTClient+MON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RESTClient+MON.h"; sourceTree = "<group>"; };
+		B04F341C1B1EE73800F9E9EB /* RESTClient+MON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RESTClient+MON.m"; sourceTree = "<group>"; };
+		B04F341D1B1EE73800F9E9EB /* RESTClient+OSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RESTClient+OSD.h"; sourceTree = "<group>"; };
+		B04F341E1B1EE73800F9E9EB /* RESTClient+OSD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RESTClient+OSD.m"; sourceTree = "<group>"; };
+		B04F341F1B1EE73800F9E9EB /* RESTClient+PG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RESTClient+PG.h"; sourceTree = "<group>"; };
+		B04F34201B1EE73800F9E9EB /* RESTClient+PG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RESTClient+PG.m"; sourceTree = "<group>"; };
+		B04F34211B1EE73800F9E9EB /* RESTClient+Root.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RESTClient+Root.h"; sourceTree = "<group>"; };
+		B04F34221B1EE73800F9E9EB /* RESTClient+Root.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RESTClient+Root.m"; sourceTree = "<group>"; };
+		B04F34231B1EE73800F9E9EB /* RESTClient+Tell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RESTClient+Tell.h"; sourceTree = "<group>"; };
+		B04F34241B1EE73800F9E9EB /* RESTClient+Tell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RESTClient+Tell.m"; sourceTree = "<group>"; };
+		B04F34251B1EE73800F9E9EB /* RESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClient.h; sourceTree = "<group>"; };
+		B04F34261B1EE73800F9E9EB /* RESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClient.m; sourceTree = "<group>"; };
+		B04F342F1B1EEA9800F9E9EB /* CephMonitor.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CephMonitor.pch; sourceTree = "<group>"; };
+		B04F34301B1EEEBC00F9E9EB /* OSDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDTableViewController.h; sourceTree = "<group>"; };
+		B04F34311B1EEEBC00F9E9EB /* OSDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDTableViewController.m; sourceTree = "<group>"; };
+		B04F34341B1EF84C00F9E9EB /* OSDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDTableViewCell.h; sourceTree = "<group>"; };
+		B04F34351B1EF84C00F9E9EB /* OSDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAADC2FBAE0B2E0DB8BF0DA /* libPods-CephMonitor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +100,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03FBE887B46F4960C4346EA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				883E5E6D07738F4AA0A9A324 /* Pods-CephMonitor.debug.xcconfig */,
+				46C23F11D268A6D7DEDD2CC3 /* Pods-CephMonitor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B04F33D01B1EE4CB00F9E9EB = {
 			isa = PBXGroup;
 			children = (
 				B04F33DB1B1EE4CB00F9E9EB /* CephMonitor */,
 				B04F33F51B1EE4CB00F9E9EB /* CephMonitorTests */,
 				B04F33DA1B1EE4CB00F9E9EB /* Products */,
+				03FBE887B46F4960C4346EA0 /* Pods */,
+				DCD58D08C3B08DD69CDD9062 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +132,9 @@
 		B04F33DB1B1EE4CB00F9E9EB /* CephMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				B04F34021B1EE69800F9E9EB /* Classes */,
 				B04F33E01B1EE4CB00F9E9EB /* AppDelegate.h */,
 				B04F33E11B1EE4CB00F9E9EB /* AppDelegate.m */,
-				B04F33E31B1EE4CB00F9E9EB /* ViewController.h */,
-				B04F33E41B1EE4CB00F9E9EB /* ViewController.m */,
-				B04F33E61B1EE4CB00F9E9EB /* Main.storyboard */,
 				B04F33E91B1EE4CB00F9E9EB /* Images.xcassets */,
 				B04F33EB1B1EE4CB00F9E9EB /* LaunchScreen.xib */,
 				B04F33DC1B1EE4CB00F9E9EB /* Supporting Files */,
@@ -98,6 +147,7 @@
 			children = (
 				B04F33DD1B1EE4CB00F9E9EB /* Info.plist */,
 				B04F33DE1B1EE4CB00F9E9EB /* main.m */,
+				B04F342F1B1EEA9800F9E9EB /* CephMonitor.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +169,111 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B04F34021B1EE69800F9E9EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B04F34171B1EE73800F9E9EB /* Networking */,
+				B04F34031B1EE69800F9E9EB /* Categries */,
+				B04F34041B1EE69800F9E9EB /* Helper */,
+				B04F34051B1EE69800F9E9EB /* Models */,
+				B04F34061B1EE69800F9E9EB /* ViewControllers */,
+				B04F34071B1EE69800F9E9EB /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B04F34031B1EE69800F9E9EB /* Categries */ = {
+			isa = PBXGroup;
+			children = (
+				B04F340B1B1EE6E400F9E9EB /* UIColor+Extra.h */,
+				B04F340C1B1EE6E400F9E9EB /* UIColor+Extra.m */,
+				B04F340D1B1EE6E400F9E9EB /* UIFont+Extra.h */,
+				B04F340E1B1EE6E400F9E9EB /* UIFont+Extra.m */,
+				B04F340F1B1EE6E400F9E9EB /* UIImage+Extra.h */,
+				B04F34101B1EE6E400F9E9EB /* UIImage+Extra.m */,
+				B04F34111B1EE6E400F9E9EB /* UIView+Layout.h */,
+				B04F34121B1EE6E400F9E9EB /* UIView+Layout.m */,
+			);
+			path = Categries;
+			sourceTree = "<group>";
+		};
+		B04F34041B1EE69800F9E9EB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B04F34051B1EE69800F9E9EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B04F34061B1EE69800F9E9EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B04F34301B1EEEBC00F9E9EB /* OSDTableViewController.h */,
+				B04F34311B1EEEBC00F9E9EB /* OSDTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B04F34071B1EE69800F9E9EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B04F34331B1EF83800F9E9EB /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B04F34171B1EE73800F9E9EB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B04F34181B1EE73800F9E9EB /* apis */,
+				B04F34251B1EE73800F9E9EB /* RESTClient.h */,
+				B04F34261B1EE73800F9E9EB /* RESTClient.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B04F34181B1EE73800F9E9EB /* apis */ = {
+			isa = PBXGroup;
+			children = (
+				B04F34191B1EE73800F9E9EB /* RESTClient+MDS.h */,
+				B04F341A1B1EE73800F9E9EB /* RESTClient+MDS.m */,
+				B04F341B1B1EE73800F9E9EB /* RESTClient+MON.h */,
+				B04F341C1B1EE73800F9E9EB /* RESTClient+MON.m */,
+				B04F341D1B1EE73800F9E9EB /* RESTClient+OSD.h */,
+				B04F341E1B1EE73800F9E9EB /* RESTClient+OSD.m */,
+				B04F341F1B1EE73800F9E9EB /* RESTClient+PG.h */,
+				B04F34201B1EE73800F9E9EB /* RESTClient+PG.m */,
+				B04F34211B1EE73800F9E9EB /* RESTClient+Root.h */,
+				B04F34221B1EE73800F9E9EB /* RESTClient+Root.m */,
+				B04F34231B1EE73800F9E9EB /* RESTClient+Tell.h */,
+				B04F34241B1EE73800F9E9EB /* RESTClient+Tell.m */,
+			);
+			path = apis;
+			sourceTree = "<group>";
+		};
+		B04F34331B1EF83800F9E9EB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B04F34341B1EF84C00F9E9EB /* OSDTableViewCell.h */,
+				B04F34351B1EF84C00F9E9EB /* OSDTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DCD58D08C3B08DD69CDD9062 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +281,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B04F33FC1B1EE4CB00F9E9EB /* Build configuration list for PBXNativeTarget "CephMonitor" */;
 			buildPhases = (
+				8D87946C71EAE1F072FCB695 /* Check Pods Manifest.lock */,
 				B04F33D51B1EE4CB00F9E9EB /* Sources */,
 				B04F33D61B1EE4CB00F9E9EB /* Frameworks */,
 				B04F33D71B1EE4CB00F9E9EB /* Resources */,
+				EED63C9EF7586E75B444EC6A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,7 +356,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B04F33E81B1EE4CB00F9E9EB /* Main.storyboard in Resources */,
 				B04F33ED1B1EE4CB00F9E9EB /* LaunchScreen.xib in Resources */,
 				B04F33EA1B1EE4CB00F9E9EB /* Images.xcassets in Resources */,
 			);
@@ -214,14 +370,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8D87946C71EAE1F072FCB695 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EED63C9EF7586E75B444EC6A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CephMonitor/Pods-CephMonitor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B04F33D51B1EE4CB00F9E9EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B04F33E51B1EE4CB00F9E9EB /* ViewController.m in Sources */,
+				B04F34291B1EE73800F9E9EB /* RESTClient+OSD.m in Sources */,
 				B04F33E21B1EE4CB00F9E9EB /* AppDelegate.m in Sources */,
+				B04F342C1B1EE73800F9E9EB /* RESTClient+Tell.m in Sources */,
+				B04F34151B1EE6E400F9E9EB /* UIImage+Extra.m in Sources */,
+				B04F342B1B1EE73800F9E9EB /* RESTClient+Root.m in Sources */,
+				B04F34131B1EE6E400F9E9EB /* UIColor+Extra.m in Sources */,
+				B04F34361B1EF84C00F9E9EB /* OSDTableViewCell.m in Sources */,
+				B04F34161B1EE6E400F9E9EB /* UIView+Layout.m in Sources */,
+				B04F34141B1EE6E400F9E9EB /* UIFont+Extra.m in Sources */,
 				B04F33DF1B1EE4CB00F9E9EB /* main.m in Sources */,
+				B04F342D1B1EE73800F9E9EB /* RESTClient.m in Sources */,
+				B04F34321B1EEEBC00F9E9EB /* OSDTableViewController.m in Sources */,
+				B04F342A1B1EE73800F9E9EB /* RESTClient+PG.m in Sources */,
+				B04F34271B1EE73800F9E9EB /* RESTClient+MDS.m in Sources */,
+				B04F34281B1EE73800F9E9EB /* RESTClient+MON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +445,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B04F33E61B1EE4CB00F9E9EB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B04F33E71B1EE4CB00F9E9EB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B04F33EB1B1EE4CB00F9E9EB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,8 +538,10 @@
 		};
 		B04F33FD1B1EE4CB00F9E9EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883E5E6D07738F4AA0A9A324 /* Pods-CephMonitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = CephMonitor/CephMonitor.pch;
 				INFOPLIST_FILE = CephMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,8 +550,10 @@
 		};
 		B04F33FE1B1EE4CB00F9E9EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C23F11D268A6D7DEDD2CC3 /* Pods-CephMonitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = CephMonitor/CephMonitor.pch;
 				INFOPLIST_FILE = CephMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +613,7 @@
 				B04F33FE1B1EE4CB00F9E9EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B04F33FF1B1EE4CB00F9E9EB /* Build configuration list for PBXNativeTarget "CephMonitorTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +622,7 @@
 				B04F34011B1EE4CB00F9E9EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
