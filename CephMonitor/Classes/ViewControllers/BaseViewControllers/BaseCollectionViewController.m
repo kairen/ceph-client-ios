@@ -10,7 +10,7 @@
 #import "GHRevealViewController.h"
 #import "AppDelegate.h"
 
-@interface BaseCollectionViewController ()
+@interface BaseCollectionViewController () 
 
 @end
 
@@ -22,7 +22,6 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor pageBackgroudColor];
-    
     
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     rightButton.frame = CGRectMake(0, 0, 28, 28);
@@ -37,5 +36,6 @@ static NSString * const reuseIdentifier = @"Cell";
     
     [revealViewController toggleSidebar:!revealViewController.sidebarShowing duration:kGHRevealSidebarDefaultAnimationDuration];
 }
+
 
 @end

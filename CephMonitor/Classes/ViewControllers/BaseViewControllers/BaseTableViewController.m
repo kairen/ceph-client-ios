@@ -8,9 +8,10 @@
 
 #import "BaseTableViewController.h"
 #import "GHRevealViewController.h"
+#import "TransitionAnimation.h"
 #import "AppDelegate.h"
 
-@interface BaseTableViewController ()
+@interface BaseTableViewController () 
 
 @end
 
@@ -33,5 +34,7 @@
     
     [revealViewController toggleSidebar:!revealViewController.sidebarShowing duration:kGHRevealSidebarDefaultAnimationDuration];
 }
+
+
 
 @end

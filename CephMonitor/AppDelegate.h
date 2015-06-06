@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class GHRevealViewController;
+@class AnimateNavigationController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, strong) UINavigationController *navigation;
+@property (nonatomic, strong) AnimateNavigationController *navigation;
 @property (nonatomic, strong) GHRevealViewController *revealController;
 @end
 

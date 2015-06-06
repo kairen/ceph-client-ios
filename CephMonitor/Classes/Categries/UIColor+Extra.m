@@ -45,6 +45,10 @@
     return [UIColor colorWithRGBHex:@"#AA2626" alpha:1.0];
 }
 
++ (UIColor *)customLightRedColor {
+    return [UIColor colorWithRGBHex:@"#AA2626" alpha:0.5];
+}
+
 + (UIColor *)customGreenColor {
     return [UIColor colorWithRGBHex:@"#00a65a" alpha:1.0];
 }
@@ -106,7 +110,7 @@
 }
 
 + (UIColor *)customShadowColor {
-    return [UIColor colorWithRGBHex:@"#CED4DC" alpha:1.0];
+    return [UIColor colorWithRGBHex:@"#DBDBDB" alpha:1.0];
 }
 
 @end

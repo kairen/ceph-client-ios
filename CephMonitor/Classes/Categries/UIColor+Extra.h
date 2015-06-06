@@ -17,6 +17,7 @@
 
 + (UIColor *)pageBackgroudColor;
 + (UIColor *)customRedColor;
++ (UIColor *)customLightRedColor;
 + (UIColor *)customGreenColor;
 + (UIColor *)customBlueColor;
 + (UIColor *)customLightBlueColor;

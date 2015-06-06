@@ -7,8 +7,11 @@
 //
 
 #import "BaseViewController.h"
+#import "TransitionAnimation.h"
+#import "GHRevealViewController.h"
+#import "AppDelegate.h"
 
-@interface BaseViewController ()
+@interface BaseViewController () 
 
 @end
 
@@ -27,8 +30,11 @@
 
 #pragma mark - Navigation Right Button Clicked Action
 - (void)rightButtonAction:(id)sender {
-    NSLog(@"asdadsdad");
+    GHRevealViewController *revealViewController = ((AppDelegate *)[UIApplication sharedApplication].delegate).revealController;
+    
+    [revealViewController toggleSidebar:!revealViewController.sidebarShowing duration:kGHRevealSidebarDefaultAnimationDuration];
 }
+
 
 
 @end

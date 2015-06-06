@@ -64,10 +64,13 @@
         /**
          *  More Label
          */
-        self.moreLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMinX(self.contentLabel.frame), CGRectGetHeight(frame) - MORE_HEIGHT - SPACE, CGRectGetWidth(self.subContentLabel.frame), MORE_HEIGHT)];
-        self.moreLabel.textAlignment = NSTextAlignmentRight;
-        self.moreLabel.textColor = [UIColor customLightBlackColor];
-        self.moreLabel.text = @"more...";
+        self.moreLabel = [[UILabel alloc] initWithFrame:CGRectMake((self.width / 2) - 65,self.height - 35 , 130, 30)];
+        self.moreLabel.backgroundColor = [UIColor customYellowColor];
+        self.moreLabel.layer.masksToBounds = YES;
+        self.moreLabel.textAlignment = NSTextAlignmentCenter;
+        self.moreLabel.layer.cornerRadius = 5;
+        self.moreLabel.textColor = [UIColor whiteColor];
+        self.moreLabel.text = @"有三個警告訊息!";
         [self addSubview:self.moreLabel];
     }
     return self;
@@ -80,9 +83,9 @@
 
 #pragma mark - Change Frist Cell Font Size
 - (void)fontSizeWithCellIndex:(NSInteger)index {
-    self.titleLabel.font = (index == 0) ? [UIFont boldSystemFontOfSize:20] : [UIFont boldSystemFontOfSize:14];
-    self.contentLabel.font = (index == 0) ? [UIFont boldSystemFontOfSize:26] : [UIFont boldSystemFontOfSize:18];
-    self.subContentLabel.font = (index == 0) ? [UIFont systemFontOfSize:18] : [UIFont systemFontOfSize:14];
+    self.titleLabel.font = (index == 0) ? [UIFont fontHelveticaNeueBoldSize:20] : [UIFont fontHelveticaNeueBoldSize:14];
+    self.contentLabel.font = (index == 0) ? [UIFont fontHelveticaNeueBoldSize:40] : [UIFont fontHelveticaNeueBoldSize:26];
+    self.subContentLabel.font = (index == 0) ? [UIFont fontHelveticaNeueLightSize:18] : [UIFont fontHelveticaNeueLightSize:14];
 }
 
 @end

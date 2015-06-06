@@ -45,6 +45,8 @@
 		B05DBFDC1B22E63F001E640D /* AlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFD71B22E63F001E640D /* AlertTableViewCell.m */; };
 		B05DBFDD1B22E63F001E640D /* AlertTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFD91B22E63F001E640D /* AlertTableViewHeader.m */; };
 		B05DBFDE1B22E63F001E640D /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFDB1B22E63F001E640D /* CustomAlertView.m */; };
+		B05DBFE11B22F64F001E640D /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFE01B22F64F001E640D /* TransitionAnimation.m */; };
+		B05DBFE41B22F96D001E640D /* AnimateNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFE31B22F96D001E640D /* AnimateNavigationController.m */; };
 		DFAADC2FBAE0B2E0DB8BF0DA /* libPods-CephMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +141,10 @@
 		B05DBFD91B22E63F001E640D /* AlertTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewHeader.m; sourceTree = "<group>"; };
 		B05DBFDA1B22E63F001E640D /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
 		B05DBFDB1B22E63F001E640D /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
+		B05DBFDF1B22F64F001E640D /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
+		B05DBFE01B22F64F001E640D /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
+		B05DBFE21B22F96D001E640D /* AnimateNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateNavigationController.h; sourceTree = "<group>"; };
+		B05DBFE31B22F96D001E640D /* AnimateNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +266,8 @@
 		B04F34041B1EE69800F9E9EB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B05DBFDF1B22F64F001E640D /* TransitionAnimation.h */,
+				B05DBFE01B22F64F001E640D /* TransitionAnimation.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -364,6 +372,8 @@
 				B05DBFAB1B215D3D001E640D /* BaseTableViewController.m */,
 				B05DBFC81B22A1CA001E640D /* BaseCollectionViewController.h */,
 				B05DBFC91B22A1CA001E640D /* BaseCollectionViewController.m */,
+				B05DBFE21B22F96D001E640D /* AnimateNavigationController.h */,
+				B05DBFE31B22F96D001E640D /* AnimateNavigationController.m */,
 			);
 			path = BaseViewControllers;
 			sourceTree = "<group>";
@@ -535,6 +545,7 @@
 				B04F34291B1EE73800F9E9EB /* RESTClient+OSD.m in Sources */,
 				B05DBFB81B217296001E640D /* LoginViewController.m in Sources */,
 				B05DBFA91B215D2B001E640D /* BaseViewController.m in Sources */,
+				B05DBFE41B22F96D001E640D /* AnimateNavigationController.m in Sources */,
 				B04F33E21B1EE4CB00F9E9EB /* AppDelegate.m in Sources */,
 				B05DBFCE1B22A51C001E640D /* HealthViewFlowLayout.m in Sources */,
 				B04F34421B1F1F4200F9E9EB /* BaseModel.m in Sources */,
@@ -543,6 +554,7 @@
 				B05DBFAC1B215D3D001E640D /* BaseTableViewController.m in Sources */,
 				B05DBFB21B215E46001E640D /* SliderMenuView.m in Sources */,
 				B05DBFD11B22A5AA001E640D /* HealthCollectionViewCell.m in Sources */,
+				B05DBFE11B22F64F001E640D /* TransitionAnimation.m in Sources */,
 				B04F342C1B1EE73800F9E9EB /* RESTClient+Tell.m in Sources */,
 				B05DBFC11B21E644001E640D /* LogTableViewCell.m in Sources */,
 				B05DBFC41B21E68A001E640D /* LogModel.m in Sources */,

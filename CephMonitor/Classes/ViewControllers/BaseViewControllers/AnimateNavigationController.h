@@ -1,5 +1,5 @@
 //
-//  BaseCollectionViewController.h
+//  AnimateNavigationController.h
 //  CephMonitor
 //
 //  Created by KaiRen.Bai on 2015/6/6.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseCollectionViewController : UICollectionViewController 
+@interface AnimateNavigationController : UINavigationController <UINavigationControllerDelegate>
 
 @end

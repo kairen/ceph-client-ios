@@ -45,7 +45,6 @@
     else if (sender == self.loginView.signinButton) {
         HealthViewFlowLayout *flowLayout = [[HealthViewFlowLayout alloc] init];
         HealthViewController *healthController = [[HealthViewController alloc] initWithCollectionViewLayout:flowLayout];
-        
         [self.navigationController pushViewController:healthController animated:YES];
     }
 }

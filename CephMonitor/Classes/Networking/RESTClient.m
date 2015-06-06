@@ -11,7 +11,8 @@
 
 typedef void(^RESTSuccessBlock)(NSURLSessionDataTask *task, id responseObject);
 
-static NSTimeInterval const RESTRequestTimeout = 6;
+static NSTimeInterval const RESTRequestTimeout = 6 ;
+static NSTimeInterval const RESTRequestDelayTime = 1 * NSEC_PER_SEC;
 static NSString * const RESTAlertGetTitle = @"HTTP GET Status";
 static NSString * const RESTAlertPutTitle = @"HTTP PUT Status";
 static NSString * const RESTAlertPostTitle = @"HTTP POST Status";
@@ -74,49 +75,50 @@ static NSString * const RESTAlertDeleteTitle = @"HTTP DELETE Status";
     typeof(self) __weak weakSelf = self;
     [SVProgressHUD show];
     [SVProgressHUD showWithStatus:@"Loading ..." maskType:SVProgressHUDMaskTypeBlack];
-    
-    switch (method) {
-        case RESTRequestGET: {
-            // GET Method
-            [self GET:apiURL parameters:parameters success:^(NSURLSessionDataTask *task, id object) {
-                if([weakSelf checkingResponseObj:object] && response) {
-                   response(object);
-                }
-            } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                [weakSelf showAlertWithTitle:RESTAlertGetTitle message:error.localizedDescription];
-            }];
-        } break;
-        case RESTRequestPOST: {
-            // POST Method
-            [self POST:apiURL parameters:parameters success:^(NSURLSessionDataTask *task, id object) {
-                if([weakSelf checkingResponseObj:object] && response) {
-                    response(object);
-                }
-            } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                [weakSelf showAlertWithTitle:RESTAlertPostTitle message:error.localizedDescription];
-            }];
-        } break;
-        case RESTRequestPUT: {
-            // PUT Method
-            [self PUT:apiURL parameters:parameters success:^(NSURLSessionDataTask *task, id object) {
-                if([weakSelf checkingResponseObj:object] && response) {
-                    response(object);
-                }
-            } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                [weakSelf showAlertWithTitle:RESTAlertPutTitle message:error.localizedDescription];
-            }];
-        } break;
-        case RESTRequestDelete: {
-            // DELETE Method
-            [self DELETE:apiURL parameters:parameters success:^(NSURLSessionDataTask *task, id object) {
-                if([weakSelf checkingResponseObj:object] && response) {
-                    response(object);
-                }
-            } failure:^(NSURLSessionDataTask *task, NSError *error) {
-                [weakSelf showAlertWithTitle:RESTAlertDeleteTitle message:error.localizedDescription];
-            }];
-        } break;
-    }
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)RESTRequestDelayTime), dispatch_get_main_queue(), ^{
+        switch (method) {
+            case RESTRequestGET: {
+                // GET Method
+                [weakSelf GET:apiURL parameters:parameters success:^(NSURLSessionDataTask *task, id object) {
+                    if([weakSelf checkingResponseObj:object] && response) {
+                        response(object);
+                    }
+                } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                    [weakSelf showAlertWithTitle:RESTAlertGetTitle message:error.localizedDescription];
+                }];
+            } break;
+            case RESTRequestPOST: {
+                // POST Method
+                [weakSelf POST:apiURL parameters:parameters success:^(NSURLSessionDataTask *task, id object) {
+                    if([weakSelf checkingResponseObj:object] && response) {
+                        response(object);
+                    }
+                } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                    [weakSelf showAlertWithTitle:RESTAlertPostTitle message:error.localizedDescription];
+                }];
+            } break;
+            case RESTRequestPUT: {
+                // PUT Method
+                [weakSelf PUT:apiURL parameters:parameters success:^(NSURLSessionDataTask *task, id object) {
+                    if([weakSelf checkingResponseObj:object] && response) {
+                        response(object);
+                    }
+                } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                    [weakSelf showAlertWithTitle:RESTAlertPutTitle message:error.localizedDescription];
+                }];
+            } break;
+            case RESTRequestDelete: {
+                // DELETE Method
+                [weakSelf DELETE:apiURL parameters:parameters success:^(NSURLSessionDataTask *task, id object) {
+                    if([weakSelf checkingResponseObj:object] && response) {
+                        response(object);
+                    }
+                } failure:^(NSURLSessionDataTask *task, NSError *error) {
+                    [weakSelf showAlertWithTitle:RESTAlertDeleteTitle message:error.localizedDescription];
+                }];
+            } break;
+        }
+    });
 }
 
 /**

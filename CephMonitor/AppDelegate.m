@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "GHRevealViewController.h"
+#import "AnimateNavigationController.h"
 #import "SliderMenuViewController.h"
 #import "RESTClient.h"
 
@@ -25,13 +26,8 @@ static NSString * const RESTIPAddress = @"http://163.17.136.249:5100";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor pageBackgroudColor];
-    self.navigation = [[UINavigationController alloc] initWithRootViewController:[[LoginViewController alloc] init]];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor customRedColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontHelveticaNeueBoldSize:20], NSForegroundColorAttributeName:[UIColor whiteColor]}];
-    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontHelveticaNeueLightSize:16], NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
-    [self.navigation.navigationBar setTintColor:[UIColor whiteColor]];
-    self.navigation.navigationBar.translucent = NO;
-    
+    self.navigation = [[AnimateNavigationController alloc] initWithRootViewController:[[LoginViewController alloc] init]];
+  
     self.revealController = [[GHRevealViewController alloc] init];
     self.sliderMenuViewController = [[SliderMenuViewController alloc] init];
     self.revealController.sidebarViewController = self.sliderMenuViewController;
