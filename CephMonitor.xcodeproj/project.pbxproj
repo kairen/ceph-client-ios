@@ -27,6 +27,24 @@
 		B04F34361B1EF84C00F9E9EB /* OSDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34351B1EF84C00F9E9EB /* OSDTableViewCell.m */; };
 		B04F34421B1F1F4200F9E9EB /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34411B1F1F4200F9E9EB /* BaseModel.m */; };
 		B04F34451B1F211200F9E9EB /* OSDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34441B1F211200F9E9EB /* OSDModel.m */; };
+		B05DBFA91B215D2B001E640D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFA81B215D2B001E640D /* BaseViewController.m */; };
+		B05DBFAC1B215D3D001E640D /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFAB1B215D3D001E640D /* BaseTableViewController.m */; };
+		B05DBFAF1B215E3B001E640D /* SliderMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFAE1B215E3B001E640D /* SliderMenuViewController.m */; };
+		B05DBFB21B215E46001E640D /* SliderMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFB11B215E46001E640D /* SliderMenuView.m */; };
+		B05DBFB51B215EB5001E640D /* SliderMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFB41B215EB5001E640D /* SliderMenuModel.m */; };
+		B05DBFB81B217296001E640D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFB71B217296001E640D /* LoginViewController.m */; };
+		B05DBFBB1B2172D6001E640D /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFBA1B2172D6001E640D /* LoginView.m */; };
+		B05DBFBE1B21E5D3001E640D /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFBD1B21E5D3001E640D /* LogViewController.m */; };
+		B05DBFC11B21E644001E640D /* LogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFC01B21E644001E640D /* LogTableViewCell.m */; };
+		B05DBFC41B21E68A001E640D /* LogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFC31B21E68A001E640D /* LogModel.m */; };
+		B05DBFC71B22A133001E640D /* HealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFC61B22A133001E640D /* HealthViewController.m */; };
+		B05DBFCA1B22A1CA001E640D /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFC91B22A1CA001E640D /* BaseCollectionViewController.m */; };
+		B05DBFCE1B22A51C001E640D /* HealthViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFCD1B22A51C001E640D /* HealthViewFlowLayout.m */; };
+		B05DBFD11B22A5AA001E640D /* HealthCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFD01B22A5AA001E640D /* HealthCollectionViewCell.m */; };
+		B05DBFD41B22C461001E640D /* HealthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFD31B22C461001E640D /* HealthModel.m */; };
+		B05DBFDC1B22E63F001E640D /* AlertTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFD71B22E63F001E640D /* AlertTableViewCell.m */; };
+		B05DBFDD1B22E63F001E640D /* AlertTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFD91B22E63F001E640D /* AlertTableViewHeader.m */; };
+		B05DBFDE1B22E63F001E640D /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFDB1B22E63F001E640D /* CustomAlertView.m */; };
 		DFAADC2FBAE0B2E0DB8BF0DA /* libPods-CephMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +62,7 @@
 		0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CephMonitor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C23F11D268A6D7DEDD2CC3 /* Pods-CephMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CephMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-CephMonitor/Pods-CephMonitor.release.xcconfig"; sourceTree = "<group>"; };
 		883E5E6D07738F4AA0A9A324 /* Pods-CephMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CephMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CephMonitor/Pods-CephMonitor.debug.xcconfig"; sourceTree = "<group>"; };
-		B04F33D91B1EE4CB00F9E9EB /* CephMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CephMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04F33D91B1EE4CB00F9E9EB /* 行動儀表板.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "行動儀表板.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04F33DD1B1EE4CB00F9E9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B04F33DE1B1EE4CB00F9E9EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B04F33E01B1EE4CB00F9E9EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +103,42 @@
 		B04F34411B1F1F4200F9E9EB /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		B04F34431B1F211200F9E9EB /* OSDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDModel.h; sourceTree = "<group>"; };
 		B04F34441B1F211200F9E9EB /* OSDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDModel.m; sourceTree = "<group>"; };
+		B05DBFA71B215D2B001E640D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		B05DBFA81B215D2B001E640D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		B05DBFAA1B215D3D001E640D /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		B05DBFAB1B215D3D001E640D /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		B05DBFAD1B215E3B001E640D /* SliderMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderMenuViewController.h; sourceTree = "<group>"; };
+		B05DBFAE1B215E3B001E640D /* SliderMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderMenuViewController.m; sourceTree = "<group>"; };
+		B05DBFB01B215E46001E640D /* SliderMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderMenuView.h; sourceTree = "<group>"; };
+		B05DBFB11B215E46001E640D /* SliderMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderMenuView.m; sourceTree = "<group>"; };
+		B05DBFB31B215EB5001E640D /* SliderMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderMenuModel.h; sourceTree = "<group>"; };
+		B05DBFB41B215EB5001E640D /* SliderMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderMenuModel.m; sourceTree = "<group>"; };
+		B05DBFB61B217296001E640D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B05DBFB71B217296001E640D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B05DBFB91B2172D6001E640D /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		B05DBFBA1B2172D6001E640D /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		B05DBFBC1B21E5D3001E640D /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		B05DBFBD1B21E5D3001E640D /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		B05DBFBF1B21E644001E640D /* LogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogTableViewCell.h; sourceTree = "<group>"; };
+		B05DBFC01B21E644001E640D /* LogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogTableViewCell.m; sourceTree = "<group>"; };
+		B05DBFC21B21E68A001E640D /* LogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogModel.h; sourceTree = "<group>"; };
+		B05DBFC31B21E68A001E640D /* LogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogModel.m; sourceTree = "<group>"; };
+		B05DBFC51B22A133001E640D /* HealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthViewController.h; sourceTree = "<group>"; };
+		B05DBFC61B22A133001E640D /* HealthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthViewController.m; sourceTree = "<group>"; };
+		B05DBFC81B22A1CA001E640D /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
+		B05DBFC91B22A1CA001E640D /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
+		B05DBFCC1B22A51C001E640D /* HealthViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthViewFlowLayout.h; sourceTree = "<group>"; };
+		B05DBFCD1B22A51C001E640D /* HealthViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthViewFlowLayout.m; sourceTree = "<group>"; };
+		B05DBFCF1B22A5AA001E640D /* HealthCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthCollectionViewCell.h; sourceTree = "<group>"; };
+		B05DBFD01B22A5AA001E640D /* HealthCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthCollectionViewCell.m; sourceTree = "<group>"; };
+		B05DBFD21B22C461001E640D /* HealthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthModel.h; sourceTree = "<group>"; };
+		B05DBFD31B22C461001E640D /* HealthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthModel.m; sourceTree = "<group>"; };
+		B05DBFD61B22E63F001E640D /* AlertTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewCell.h; sourceTree = "<group>"; };
+		B05DBFD71B22E63F001E640D /* AlertTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewCell.m; sourceTree = "<group>"; };
+		B05DBFD81B22E63F001E640D /* AlertTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewHeader.h; sourceTree = "<group>"; };
+		B05DBFD91B22E63F001E640D /* AlertTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewHeader.m; sourceTree = "<group>"; };
+		B05DBFDA1B22E63F001E640D /* CustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAlertView.h; sourceTree = "<group>"; };
+		B05DBFDB1B22E63F001E640D /* CustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +183,7 @@
 		B04F33DA1B1EE4CB00F9E9EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B04F33D91B1EE4CB00F9E9EB /* CephMonitor.app */,
+				B04F33D91B1EE4CB00F9E9EB /* 行動儀表板.app */,
 				B04F33F21B1EE4CB00F9E9EB /* CephMonitorTests.xctest */,
 			);
 			name = Products;
@@ -217,6 +271,12 @@
 				B04F34411B1F1F4200F9E9EB /* BaseModel.m */,
 				B04F34431B1F211200F9E9EB /* OSDModel.h */,
 				B04F34441B1F211200F9E9EB /* OSDModel.m */,
+				B05DBFC21B21E68A001E640D /* LogModel.h */,
+				B05DBFC31B21E68A001E640D /* LogModel.m */,
+				B05DBFB31B215EB5001E640D /* SliderMenuModel.h */,
+				B05DBFB41B215EB5001E640D /* SliderMenuModel.m */,
+				B05DBFD21B22C461001E640D /* HealthModel.h */,
+				B05DBFD31B22C461001E640D /* HealthModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,8 +284,17 @@
 		B04F34061B1EE69800F9E9EB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B05DBFA61B215D2B001E640D /* BaseViewControllers */,
+				B05DBFB61B217296001E640D /* LoginViewController.h */,
+				B05DBFB71B217296001E640D /* LoginViewController.m */,
+				B05DBFC51B22A133001E640D /* HealthViewController.h */,
+				B05DBFC61B22A133001E640D /* HealthViewController.m */,
+				B05DBFAD1B215E3B001E640D /* SliderMenuViewController.h */,
+				B05DBFAE1B215E3B001E640D /* SliderMenuViewController.m */,
 				B04F34301B1EEEBC00F9E9EB /* OSDTableViewController.h */,
 				B04F34311B1EEEBC00F9E9EB /* OSDTableViewController.m */,
+				B05DBFBC1B21E5D3001E640D /* LogViewController.h */,
+				B05DBFBD1B21E5D3001E640D /* LogViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -233,7 +302,13 @@
 		B04F34071B1EE69800F9E9EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B05DBFD51B22E63F001E640D /* AlertViews */,
 				B04F34331B1EF83800F9E9EB /* Cells */,
+				B05DBFCB1B22A509001E640D /* CollectViewLayouts */,
+				B05DBFB91B2172D6001E640D /* LoginView.h */,
+				B05DBFBA1B2172D6001E640D /* LoginView.m */,
+				B05DBFB01B215E46001E640D /* SliderMenuView.h */,
+				B05DBFB11B215E46001E640D /* SliderMenuView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -270,10 +345,49 @@
 		B04F34331B1EF83800F9E9EB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B05DBFCF1B22A5AA001E640D /* HealthCollectionViewCell.h */,
+				B05DBFD01B22A5AA001E640D /* HealthCollectionViewCell.m */,
+				B05DBFBF1B21E644001E640D /* LogTableViewCell.h */,
+				B05DBFC01B21E644001E640D /* LogTableViewCell.m */,
 				B04F34341B1EF84C00F9E9EB /* OSDTableViewCell.h */,
 				B04F34351B1EF84C00F9E9EB /* OSDTableViewCell.m */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		B05DBFA61B215D2B001E640D /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B05DBFA71B215D2B001E640D /* BaseViewController.h */,
+				B05DBFA81B215D2B001E640D /* BaseViewController.m */,
+				B05DBFAA1B215D3D001E640D /* BaseTableViewController.h */,
+				B05DBFAB1B215D3D001E640D /* BaseTableViewController.m */,
+				B05DBFC81B22A1CA001E640D /* BaseCollectionViewController.h */,
+				B05DBFC91B22A1CA001E640D /* BaseCollectionViewController.m */,
+			);
+			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		B05DBFCB1B22A509001E640D /* CollectViewLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				B05DBFCC1B22A51C001E640D /* HealthViewFlowLayout.h */,
+				B05DBFCD1B22A51C001E640D /* HealthViewFlowLayout.m */,
+			);
+			path = CollectViewLayouts;
+			sourceTree = "<group>";
+		};
+		B05DBFD51B22E63F001E640D /* AlertViews */ = {
+			isa = PBXGroup;
+			children = (
+				B05DBFD61B22E63F001E640D /* AlertTableViewCell.h */,
+				B05DBFD71B22E63F001E640D /* AlertTableViewCell.m */,
+				B05DBFD81B22E63F001E640D /* AlertTableViewHeader.h */,
+				B05DBFD91B22E63F001E640D /* AlertTableViewHeader.m */,
+				B05DBFDA1B22E63F001E640D /* CustomAlertView.h */,
+				B05DBFDB1B22E63F001E640D /* CustomAlertView.m */,
+			);
+			path = AlertViews;
 			sourceTree = "<group>";
 		};
 		DCD58D08C3B08DD69CDD9062 /* Frameworks */ = {
@@ -303,7 +417,7 @@
 			);
 			name = CephMonitor;
 			productName = CephMonitor;
-			productReference = B04F33D91B1EE4CB00F9E9EB /* CephMonitor.app */;
+			productReference = B04F33D91B1EE4CB00F9E9EB /* 行動儀表板.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B04F33F11B1EE4CB00F9E9EB /* CephMonitorTests */ = {
@@ -419,21 +533,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				B04F34291B1EE73800F9E9EB /* RESTClient+OSD.m in Sources */,
+				B05DBFB81B217296001E640D /* LoginViewController.m in Sources */,
+				B05DBFA91B215D2B001E640D /* BaseViewController.m in Sources */,
 				B04F33E21B1EE4CB00F9E9EB /* AppDelegate.m in Sources */,
+				B05DBFCE1B22A51C001E640D /* HealthViewFlowLayout.m in Sources */,
 				B04F34421B1F1F4200F9E9EB /* BaseModel.m in Sources */,
+				B05DBFAF1B215E3B001E640D /* SliderMenuViewController.m in Sources */,
+				B05DBFB51B215EB5001E640D /* SliderMenuModel.m in Sources */,
+				B05DBFAC1B215D3D001E640D /* BaseTableViewController.m in Sources */,
+				B05DBFB21B215E46001E640D /* SliderMenuView.m in Sources */,
+				B05DBFD11B22A5AA001E640D /* HealthCollectionViewCell.m in Sources */,
 				B04F342C1B1EE73800F9E9EB /* RESTClient+Tell.m in Sources */,
+				B05DBFC11B21E644001E640D /* LogTableViewCell.m in Sources */,
+				B05DBFC41B21E68A001E640D /* LogModel.m in Sources */,
 				B04F34151B1EE6E400F9E9EB /* UIImage+Extra.m in Sources */,
+				B05DBFD41B22C461001E640D /* HealthModel.m in Sources */,
 				B04F342B1B1EE73800F9E9EB /* RESTClient+Root.m in Sources */,
+				B05DBFC71B22A133001E640D /* HealthViewController.m in Sources */,
 				B04F34131B1EE6E400F9E9EB /* UIColor+Extra.m in Sources */,
 				B04F34451B1F211200F9E9EB /* OSDModel.m in Sources */,
 				B04F34361B1EF84C00F9E9EB /* OSDTableViewCell.m in Sources */,
 				B04F34161B1EE6E400F9E9EB /* UIView+Layout.m in Sources */,
 				B04F34141B1EE6E400F9E9EB /* UIFont+Extra.m in Sources */,
+				B05DBFDC1B22E63F001E640D /* AlertTableViewCell.m in Sources */,
 				B04F33DF1B1EE4CB00F9E9EB /* main.m in Sources */,
+				B05DBFBB1B2172D6001E640D /* LoginView.m in Sources */,
 				B04F342D1B1EE73800F9E9EB /* RESTClient.m in Sources */,
+				B05DBFCA1B22A1CA001E640D /* BaseCollectionViewController.m in Sources */,
 				B04F34321B1EEEBC00F9E9EB /* OSDTableViewController.m in Sources */,
+				B05DBFBE1B21E5D3001E640D /* LogViewController.m in Sources */,
 				B04F342A1B1EE73800F9E9EB /* RESTClient+PG.m in Sources */,
+				B05DBFDD1B22E63F001E640D /* AlertTableViewHeader.m in Sources */,
 				B04F34271B1EE73800F9E9EB /* RESTClient+MDS.m in Sources */,
+				B05DBFDE1B22E63F001E640D /* CustomAlertView.m in Sources */,
 				B04F34281B1EE73800F9E9EB /* RESTClient+MON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,7 +688,7 @@
 				GCC_PREFIX_HEADER = CephMonitor/CephMonitor.pch;
 				INFOPLIST_FILE = CephMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "行動儀表板";
 			};
 			name = Debug;
 		};
@@ -568,7 +700,7 @@
 				GCC_PREFIX_HEADER = CephMonitor/CephMonitor.pch;
 				INFOPLIST_FILE = CephMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "行動儀表板";
 			};
 			name = Release;
 		};

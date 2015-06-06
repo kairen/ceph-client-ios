@@ -51,9 +51,19 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "GHSidebarNav/GHSidebarNav/Images/searchBarBG.png"
+  install_resource "GHSidebarNav/GHSidebarNav/Images/searchBarIcon.png"
+  install_resource "GHSidebarNav/GHSidebarNav/Images/searchBarIcon@2x.png"
+  install_resource "GHSidebarNav/GHSidebarNav/Images/searchTextBG.png"
+  install_resource "GHSidebarNav/GHSidebarNav/Images/user.png"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "GHSidebarNav/GHSidebarNav/Images/searchBarBG.png"
+  install_resource "GHSidebarNav/GHSidebarNav/Images/searchBarIcon.png"
+  install_resource "GHSidebarNav/GHSidebarNav/Images/searchBarIcon@2x.png"
+  install_resource "GHSidebarNav/GHSidebarNav/Images/searchTextBG.png"
+  install_resource "GHSidebarNav/GHSidebarNav/Images/user.png"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 

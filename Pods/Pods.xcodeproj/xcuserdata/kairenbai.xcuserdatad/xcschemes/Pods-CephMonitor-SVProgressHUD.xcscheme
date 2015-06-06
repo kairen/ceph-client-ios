@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7DACDECE35E7544F26C7A919"
+               BlueprintIdentifier = "B636AC9BFE966480DBCDDBAF"
                BuildableName = "libPods-CephMonitor-SVProgressHUD.a"
                BlueprintName = "Pods-CephMonitor-SVProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-CephMonitor-GHSidebarNav.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-CephMonitor-SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>13B68367C21B0FC127036EF3</key>
+		<key>222BD08E3DD79FD22FCCCBCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>746E0743150FEA564D713AB9</key>
+		<key>32AEFD9E45AF13502094D0B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7DACDECE35E7544F26C7A919</key>
+		<key>3A01462683166C97BAB060A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B636AC9BFE966480DBCDDBAF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

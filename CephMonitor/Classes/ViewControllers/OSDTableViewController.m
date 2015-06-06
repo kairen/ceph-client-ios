@@ -25,12 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"叢集OSD資訊";
-    self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.rowHeight = 80;
     self.selectIndex = -1;
     self.selectSection = -1;
-    
+    NSLog(@"%f", CGRectGetHeight(self.tableView.frame));
     typeof(self) __weak weakSelf = self;
     [[RESTClient shareInstance] objectStorageDumpEpoch:-1 response:^(id osds) {
         weakSelf.osdModel = [OSDModel createModelWithDict:osds];

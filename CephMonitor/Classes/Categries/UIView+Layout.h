@@ -28,5 +28,12 @@ typedef NS_ENUM(NSUInteger, KeyboardDevice) {
 - (CGSize)size;
 - (CGRect)scaleMakeX:(CGFloat)x y:(CGFloat)y width:(CGFloat)width height:(CGFloat)height;
 
-- (KeyboardDevice) getKeyboardDevice;
+- (KeyboardDevice)keyboardDeviceHeight;
+@end
+
+
+@interface UIScreen (Frame)
+
+- (CGRect)fullContentFrame;
+
 @end

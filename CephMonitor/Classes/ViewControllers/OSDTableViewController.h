@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 KaiRen.Bai. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseTableViewController.h"
 
-@interface OSDTableViewController : UITableViewController
+@interface OSDTableViewController : BaseTableViewController
 
 @end

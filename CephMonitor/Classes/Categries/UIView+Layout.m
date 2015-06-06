@@ -72,7 +72,7 @@ static CGFloat const UIAutoScaleY[] = {
     return self.frame.size;
 }
 
-- (KeyboardDevice)getKeyboardDevice {
+- (KeyboardDevice)keyboardDeviceHeight {
     CGRect frame = [UIScreen mainScreen].bounds;
     if(CGRectGetHeight(frame) <= 568) {
         return KeyboardiPhone5;
@@ -82,5 +82,17 @@ static CGFloat const UIAutoScaleY[] = {
     return KeyboardiPhonePlus;
 }
 
+@end
+
+/**
+ *  UIScreen Frame
+ */
+@implementation UIScreen (Frame)
+
+- (CGRect)fullContentFrame {
+    CGRect bounds = self.bounds;
+    bounds.size.height -= 64;
+    return bounds;
+}
 
 @end
