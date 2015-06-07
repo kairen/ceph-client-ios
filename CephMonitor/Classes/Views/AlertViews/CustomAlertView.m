@@ -64,7 +64,7 @@
         [self.closeButton setTitle:@"Close" forState:UIControlStateNormal];
         self.closeButton.layer.borderWidth = 0.5;
         self.closeButton.layer.borderColor = [UIColor lightGrayColor].CGColor;
-        [self.closeButton addTarget:self action:@selector(closeButtonClickedAction) forControlEvents:UIControlEventTouchUpInside];
+        [self.closeButton addTarget:self action:@selector(closeAlertViewAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.mainView addSubview:self.closeButton];
         /**
          *  Alert TableView
@@ -109,8 +109,17 @@
 }
 
 #pragma mark - Close Button Clicked Aciton
-- (void)closeButtonClickedAction {
-    [self hidden:nil];
+- (void)closeAlertViewAction:(id)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+        self.mainView.alpha = 0.0;
+        self.maskView.alpha = 0.0;
+        self.mainView.transform = CGAffineTransformMakeScale(0.0, 0.0);
+    } completion:^(BOOL finish){
+        [self.mainView removeFromSuperview];
+        [self.maskView removeFromSuperview];
+        self.mainView = nil;
+        self.maskView = nil;
+    }];
 }
 
 #pragma mark - Show in View
@@ -124,23 +133,6 @@
             self.mainView.alpha = 1.0;
             self.mainView.transform = CGAffineTransformMakeScale(1.0, 1.0);
         } completion:nil];
-    }];
-}
-
-#pragma mark - Hidden in View
-- (void)hidden:(void(^)(void))complete {
-    [UIView animateWithDuration:0.3 animations:^{
-        self.mainView.alpha = 0.0;
-        self.maskView.alpha = 0.0;
-        self.mainView.transform = CGAffineTransformMakeScale(0.0, 0.0);
-    } completion:^(BOOL finish){
-        [self.mainView removeFromSuperview];
-        [self.maskView removeFromSuperview];
-        self.mainView = nil;
-        self.maskView = nil;
-        if(complete) {
-            complete();
-        }
     }];
 }
 

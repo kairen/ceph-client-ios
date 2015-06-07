@@ -17,4 +17,8 @@
 + (NSArray *)healthListContentInfos;
 + (NSArray *)healthListSubContentInfos;
 
+
++ (NSArray *)healthCounts;
++ (NSArray *)healthMessages;
+
 @end

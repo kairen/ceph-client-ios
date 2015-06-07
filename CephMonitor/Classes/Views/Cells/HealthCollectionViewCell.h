@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, HealthCheckType) {
+    HealthCheckOkay = 0,
+    HealthCheckWarn,
+    HealthCheckError
+};
+
+
 @interface HealthCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) UIImageView *titleImage;
@@ -20,5 +27,8 @@
 
 - (void)showMoreButton:(NSInteger)index;
 - (void)fontSizeWithCellIndex:(NSInteger)index;
+
+
+- (void)showMoreStatus:(HealthCheckType)health message:(NSString *)message;
 
 @end

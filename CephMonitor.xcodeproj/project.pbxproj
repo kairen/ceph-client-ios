@@ -23,7 +23,6 @@
 		B04F342B1B1EE73800F9E9EB /* RESTClient+Root.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34221B1EE73800F9E9EB /* RESTClient+Root.m */; };
 		B04F342C1B1EE73800F9E9EB /* RESTClient+Tell.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34241B1EE73800F9E9EB /* RESTClient+Tell.m */; };
 		B04F342D1B1EE73800F9E9EB /* RESTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34261B1EE73800F9E9EB /* RESTClient.m */; };
-		B04F34321B1EEEBC00F9E9EB /* OSDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34311B1EEEBC00F9E9EB /* OSDTableViewController.m */; };
 		B04F34361B1EF84C00F9E9EB /* OSDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34351B1EF84C00F9E9EB /* OSDTableViewCell.m */; };
 		B04F34421B1F1F4200F9E9EB /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34411B1F1F4200F9E9EB /* BaseModel.m */; };
 		B04F34451B1F211200F9E9EB /* OSDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34441B1F211200F9E9EB /* OSDModel.m */; };
@@ -37,7 +36,6 @@
 		B05DBFBE1B21E5D3001E640D /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFBD1B21E5D3001E640D /* LogViewController.m */; };
 		B05DBFC11B21E644001E640D /* LogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFC01B21E644001E640D /* LogTableViewCell.m */; };
 		B05DBFC41B21E68A001E640D /* LogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFC31B21E68A001E640D /* LogModel.m */; };
-		B05DBFC71B22A133001E640D /* HealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFC61B22A133001E640D /* HealthViewController.m */; };
 		B05DBFCA1B22A1CA001E640D /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFC91B22A1CA001E640D /* BaseCollectionViewController.m */; };
 		B05DBFCE1B22A51C001E640D /* HealthViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFCD1B22A51C001E640D /* HealthViewFlowLayout.m */; };
 		B05DBFD11B22A5AA001E640D /* HealthCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFD01B22A5AA001E640D /* HealthCollectionViewCell.m */; };
@@ -47,6 +45,17 @@
 		B05DBFDE1B22E63F001E640D /* CustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFDB1B22E63F001E640D /* CustomAlertView.m */; };
 		B05DBFE11B22F64F001E640D /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFE01B22F64F001E640D /* TransitionAnimation.m */; };
 		B05DBFE41B22F96D001E640D /* AnimateNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05DBFE31B22F96D001E640D /* AnimateNavigationController.m */; };
+		B0AA9DB01B2483210061D154 /* HealthReportModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DAF1B2483210061D154 /* HealthReportModel.m */; };
+		B0AA9DB61B2486B30061D154 /* MonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DB51B2486B30061D154 /* MonCollectionViewCell.m */; };
+		B0AA9DB91B2487410061D154 /* MonitorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DB81B2487410061D154 /* MonitorModel.m */; };
+		B0AA9DBF1B248A170061D154 /* PoolsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DBE1B248A170061D154 /* PoolsModel.m */; };
+		B0AA9DCA1B248B600061D154 /* HealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DC31B248B600061D154 /* HealthViewController.m */; };
+		B0AA9DCB1B248B600061D154 /* MonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DC51B248B600061D154 /* MonitorViewController.m */; };
+		B0AA9DCC1B248B600061D154 /* OSDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DC71B248B600061D154 /* OSDViewController.m */; };
+		B0AA9DCD1B248B600061D154 /* PoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DC91B248B600061D154 /* PoolViewController.m */; };
+		B0AA9DD11B248B990061D154 /* PoolManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DD01B248B990061D154 /* PoolManageViewController.m */; };
+		B0AA9DD41B248BE70061D154 /* PoolArgsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DD31B248BE70061D154 /* PoolArgsModel.m */; };
+		B0AA9DD71B248C5B0061D154 /* EditCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DD61B248C5B0061D154 /* EditCollectionViewCell.m */; };
 		DFAADC2FBAE0B2E0DB8BF0DA /* libPods-CephMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */; };
 /* End PBXBuildFile section */
 
@@ -97,8 +106,6 @@
 		B04F34251B1EE73800F9E9EB /* RESTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTClient.h; sourceTree = "<group>"; };
 		B04F34261B1EE73800F9E9EB /* RESTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTClient.m; sourceTree = "<group>"; };
 		B04F342F1B1EEA9800F9E9EB /* CephMonitor.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CephMonitor.pch; sourceTree = "<group>"; };
-		B04F34301B1EEEBC00F9E9EB /* OSDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDTableViewController.h; sourceTree = "<group>"; };
-		B04F34311B1EEEBC00F9E9EB /* OSDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDTableViewController.m; sourceTree = "<group>"; };
 		B04F34341B1EF84C00F9E9EB /* OSDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDTableViewCell.h; sourceTree = "<group>"; };
 		B04F34351B1EF84C00F9E9EB /* OSDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDTableViewCell.m; sourceTree = "<group>"; };
 		B04F34401B1F1F4200F9E9EB /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
@@ -125,8 +132,6 @@
 		B05DBFC01B21E644001E640D /* LogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogTableViewCell.m; sourceTree = "<group>"; };
 		B05DBFC21B21E68A001E640D /* LogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogModel.h; sourceTree = "<group>"; };
 		B05DBFC31B21E68A001E640D /* LogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogModel.m; sourceTree = "<group>"; };
-		B05DBFC51B22A133001E640D /* HealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthViewController.h; sourceTree = "<group>"; };
-		B05DBFC61B22A133001E640D /* HealthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthViewController.m; sourceTree = "<group>"; };
 		B05DBFC81B22A1CA001E640D /* BaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
 		B05DBFC91B22A1CA001E640D /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
 		B05DBFCC1B22A51C001E640D /* HealthViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthViewFlowLayout.h; sourceTree = "<group>"; };
@@ -145,6 +150,28 @@
 		B05DBFE01B22F64F001E640D /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
 		B05DBFE21B22F96D001E640D /* AnimateNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateNavigationController.h; sourceTree = "<group>"; };
 		B05DBFE31B22F96D001E640D /* AnimateNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateNavigationController.m; sourceTree = "<group>"; };
+		B0AA9DAE1B2483210061D154 /* HealthReportModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthReportModel.h; sourceTree = "<group>"; };
+		B0AA9DAF1B2483210061D154 /* HealthReportModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthReportModel.m; sourceTree = "<group>"; };
+		B0AA9DB41B2486B30061D154 /* MonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonCollectionViewCell.h; sourceTree = "<group>"; };
+		B0AA9DB51B2486B30061D154 /* MonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonCollectionViewCell.m; sourceTree = "<group>"; };
+		B0AA9DB71B2487410061D154 /* MonitorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitorModel.h; sourceTree = "<group>"; };
+		B0AA9DB81B2487410061D154 /* MonitorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorModel.m; sourceTree = "<group>"; };
+		B0AA9DBD1B248A170061D154 /* PoolsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolsModel.h; sourceTree = "<group>"; };
+		B0AA9DBE1B248A170061D154 /* PoolsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolsModel.m; sourceTree = "<group>"; };
+		B0AA9DC21B248B600061D154 /* HealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthViewController.h; sourceTree = "<group>"; };
+		B0AA9DC31B248B600061D154 /* HealthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthViewController.m; sourceTree = "<group>"; };
+		B0AA9DC41B248B600061D154 /* MonitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitorViewController.h; sourceTree = "<group>"; };
+		B0AA9DC51B248B600061D154 /* MonitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitorViewController.m; sourceTree = "<group>"; };
+		B0AA9DC61B248B600061D154 /* OSDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDViewController.h; sourceTree = "<group>"; };
+		B0AA9DC71B248B600061D154 /* OSDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSDViewController.m; sourceTree = "<group>"; };
+		B0AA9DC81B248B600061D154 /* PoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolViewController.h; sourceTree = "<group>"; };
+		B0AA9DC91B248B600061D154 /* PoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolViewController.m; sourceTree = "<group>"; };
+		B0AA9DCF1B248B990061D154 /* PoolManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolManageViewController.h; sourceTree = "<group>"; };
+		B0AA9DD01B248B990061D154 /* PoolManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolManageViewController.m; sourceTree = "<group>"; };
+		B0AA9DD21B248BE70061D154 /* PoolArgsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolArgsModel.h; sourceTree = "<group>"; };
+		B0AA9DD31B248BE70061D154 /* PoolArgsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolArgsModel.m; sourceTree = "<group>"; };
+		B0AA9DD51B248C5B0061D154 /* EditCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCollectionViewCell.h; sourceTree = "<group>"; };
+		B0AA9DD61B248C5B0061D154 /* EditCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +312,14 @@
 				B05DBFB41B215EB5001E640D /* SliderMenuModel.m */,
 				B05DBFD21B22C461001E640D /* HealthModel.h */,
 				B05DBFD31B22C461001E640D /* HealthModel.m */,
+				B0AA9DAE1B2483210061D154 /* HealthReportModel.h */,
+				B0AA9DAF1B2483210061D154 /* HealthReportModel.m */,
+				B0AA9DB71B2487410061D154 /* MonitorModel.h */,
+				B0AA9DB81B2487410061D154 /* MonitorModel.m */,
+				B0AA9DBD1B248A170061D154 /* PoolsModel.h */,
+				B0AA9DBE1B248A170061D154 /* PoolsModel.m */,
+				B0AA9DD21B248BE70061D154 /* PoolArgsModel.h */,
+				B0AA9DD31B248BE70061D154 /* PoolArgsModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -292,15 +327,13 @@
 		B04F34061B1EE69800F9E9EB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B0AA9DCE1B248B760061D154 /* ManageDashboards */,
+				B0AA9DC11B248B600061D154 /* MonitorDashboards */,
 				B05DBFA61B215D2B001E640D /* BaseViewControllers */,
 				B05DBFB61B217296001E640D /* LoginViewController.h */,
 				B05DBFB71B217296001E640D /* LoginViewController.m */,
-				B05DBFC51B22A133001E640D /* HealthViewController.h */,
-				B05DBFC61B22A133001E640D /* HealthViewController.m */,
 				B05DBFAD1B215E3B001E640D /* SliderMenuViewController.h */,
 				B05DBFAE1B215E3B001E640D /* SliderMenuViewController.m */,
-				B04F34301B1EEEBC00F9E9EB /* OSDTableViewController.h */,
-				B04F34311B1EEEBC00F9E9EB /* OSDTableViewController.m */,
 				B05DBFBC1B21E5D3001E640D /* LogViewController.h */,
 				B05DBFBD1B21E5D3001E640D /* LogViewController.m */,
 			);
@@ -353,6 +386,10 @@
 		B04F34331B1EF83800F9E9EB /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B0AA9DD51B248C5B0061D154 /* EditCollectionViewCell.h */,
+				B0AA9DD61B248C5B0061D154 /* EditCollectionViewCell.m */,
+				B0AA9DB41B2486B30061D154 /* MonCollectionViewCell.h */,
+				B0AA9DB51B2486B30061D154 /* MonCollectionViewCell.m */,
 				B05DBFCF1B22A5AA001E640D /* HealthCollectionViewCell.h */,
 				B05DBFD01B22A5AA001E640D /* HealthCollectionViewCell.m */,
 				B05DBFBF1B21E644001E640D /* LogTableViewCell.h */,
@@ -398,6 +435,30 @@
 				B05DBFDB1B22E63F001E640D /* CustomAlertView.m */,
 			);
 			path = AlertViews;
+			sourceTree = "<group>";
+		};
+		B0AA9DC11B248B600061D154 /* MonitorDashboards */ = {
+			isa = PBXGroup;
+			children = (
+				B0AA9DC21B248B600061D154 /* HealthViewController.h */,
+				B0AA9DC31B248B600061D154 /* HealthViewController.m */,
+				B0AA9DC41B248B600061D154 /* MonitorViewController.h */,
+				B0AA9DC51B248B600061D154 /* MonitorViewController.m */,
+				B0AA9DC61B248B600061D154 /* OSDViewController.h */,
+				B0AA9DC71B248B600061D154 /* OSDViewController.m */,
+				B0AA9DC81B248B600061D154 /* PoolViewController.h */,
+				B0AA9DC91B248B600061D154 /* PoolViewController.m */,
+			);
+			path = MonitorDashboards;
+			sourceTree = "<group>";
+		};
+		B0AA9DCE1B248B760061D154 /* ManageDashboards */ = {
+			isa = PBXGroup;
+			children = (
+				B0AA9DCF1B248B990061D154 /* PoolManageViewController.h */,
+				B0AA9DD01B248B990061D154 /* PoolManageViewController.m */,
+			);
+			path = ManageDashboards;
 			sourceTree = "<group>";
 		};
 		DCD58D08C3B08DD69CDD9062 /* Frameworks */ = {
@@ -555,30 +616,39 @@
 				B05DBFB21B215E46001E640D /* SliderMenuView.m in Sources */,
 				B05DBFD11B22A5AA001E640D /* HealthCollectionViewCell.m in Sources */,
 				B05DBFE11B22F64F001E640D /* TransitionAnimation.m in Sources */,
+				B0AA9DCC1B248B600061D154 /* OSDViewController.m in Sources */,
 				B04F342C1B1EE73800F9E9EB /* RESTClient+Tell.m in Sources */,
 				B05DBFC11B21E644001E640D /* LogTableViewCell.m in Sources */,
+				B0AA9DD41B248BE70061D154 /* PoolArgsModel.m in Sources */,
 				B05DBFC41B21E68A001E640D /* LogModel.m in Sources */,
+				B0AA9DB91B2487410061D154 /* MonitorModel.m in Sources */,
 				B04F34151B1EE6E400F9E9EB /* UIImage+Extra.m in Sources */,
 				B05DBFD41B22C461001E640D /* HealthModel.m in Sources */,
 				B04F342B1B1EE73800F9E9EB /* RESTClient+Root.m in Sources */,
-				B05DBFC71B22A133001E640D /* HealthViewController.m in Sources */,
 				B04F34131B1EE6E400F9E9EB /* UIColor+Extra.m in Sources */,
+				B0AA9DCD1B248B600061D154 /* PoolViewController.m in Sources */,
 				B04F34451B1F211200F9E9EB /* OSDModel.m in Sources */,
 				B04F34361B1EF84C00F9E9EB /* OSDTableViewCell.m in Sources */,
 				B04F34161B1EE6E400F9E9EB /* UIView+Layout.m in Sources */,
 				B04F34141B1EE6E400F9E9EB /* UIFont+Extra.m in Sources */,
 				B05DBFDC1B22E63F001E640D /* AlertTableViewCell.m in Sources */,
+				B0AA9DB61B2486B30061D154 /* MonCollectionViewCell.m in Sources */,
 				B04F33DF1B1EE4CB00F9E9EB /* main.m in Sources */,
+				B0AA9DB01B2483210061D154 /* HealthReportModel.m in Sources */,
 				B05DBFBB1B2172D6001E640D /* LoginView.m in Sources */,
 				B04F342D1B1EE73800F9E9EB /* RESTClient.m in Sources */,
 				B05DBFCA1B22A1CA001E640D /* BaseCollectionViewController.m in Sources */,
-				B04F34321B1EEEBC00F9E9EB /* OSDTableViewController.m in Sources */,
+				B0AA9DBF1B248A170061D154 /* PoolsModel.m in Sources */,
+				B0AA9DD71B248C5B0061D154 /* EditCollectionViewCell.m in Sources */,
 				B05DBFBE1B21E5D3001E640D /* LogViewController.m in Sources */,
 				B04F342A1B1EE73800F9E9EB /* RESTClient+PG.m in Sources */,
 				B05DBFDD1B22E63F001E640D /* AlertTableViewHeader.m in Sources */,
 				B04F34271B1EE73800F9E9EB /* RESTClient+MDS.m in Sources */,
 				B05DBFDE1B22E63F001E640D /* CustomAlertView.m in Sources */,
+				B0AA9DCA1B248B600061D154 /* HealthViewController.m in Sources */,
 				B04F34281B1EE73800F9E9EB /* RESTClient+MON.m in Sources */,
+				B0AA9DCB1B248B600061D154 /* MonitorViewController.m in Sources */,
+				B0AA9DD11B248B990061D154 /* PoolManageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

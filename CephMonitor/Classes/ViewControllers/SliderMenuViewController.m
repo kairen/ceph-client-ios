@@ -8,6 +8,7 @@
 
 #import "SliderMenuViewController.h"
 #import "GHRevealViewController.h"
+#import "PoolManageViewController.h"
 #import "SliderMenuView.h"
 #import "SliderMenuModel.h"
 #import "AppDelegate.h"
@@ -91,7 +92,9 @@
 
 #pragma mark - Slider Menu Clicked Reveal Controller
 - (void)revealItem:(NSInteger)row inSection:(NSInteger)section {
-    NSLog(@"%ld, %ld",(long)section ,(long)row);
+    
+    if (section == 1 && row == 2) {
+    }
     
 }
 @end

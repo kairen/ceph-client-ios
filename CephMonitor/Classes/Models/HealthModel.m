@@ -42,4 +42,13 @@
     return @[@"in 8 hours", @"In & Up", @"Quorum", @"Active", @"Active & Clean", @"1003.7GB", @"1 MON/3 OSD"];
 }
 
++ (NSArray *)healthCounts {
+    return @[@(1), @(0), @(0), @(0), @(0), @(0), @(0)];
+}
+
++ (NSArray *)healthMessages {
+    return @[@"有『三個』警告訊息!", @"", @"", @"",
+             @"", @"", @""];
+}
+
 @end

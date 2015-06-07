@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 KaiRen.Bai. All rights reserved.
 //
 
-#import "OSDTableViewController.h"
+#import "OSDViewController.h"
 #import "OSDTableViewCell.h"
 #import "OSDModel.h"
 #import "RESTClient+OSD.h"
 
-@interface OSDTableViewController ()
+@interface OSDViewController ()
 
 @property (nonatomic) NSInteger selectIndex;
 @property (nonatomic) NSInteger selectSection;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation OSDTableViewController
+@implementation OSDViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +29,6 @@
     self.tableView.rowHeight = 80;
     self.selectIndex = -1;
     self.selectSection = -1;
-    NSLog(@"%f", CGRectGetHeight(self.tableView.frame));
     typeof(self) __weak weakSelf = self;
     [[RESTClient shareInstance] objectStorageDumpEpoch:-1 response:^(id osds) {
         weakSelf.osdModel = [OSDModel createModelWithDict:osds];

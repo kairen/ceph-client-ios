@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 KaiRen.Bai. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseModel.h"
 
-@interface LogModel : NSObject
+@interface LogModel : BaseModel
 
 + (NSArray *)logDate;
 + (NSArray *)logInfo;

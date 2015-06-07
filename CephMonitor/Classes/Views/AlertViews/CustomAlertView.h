@@ -23,6 +23,5 @@
 @property (nonatomic, strong) NSArray *detailDatas;
 
 - (void)show;
-- (void)hidden:(void(^)(void))complete;
 
 @end

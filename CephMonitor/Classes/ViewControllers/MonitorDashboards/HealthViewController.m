@@ -8,12 +8,19 @@
 
 #import "HealthViewController.h"
 #import "HealthCollectionViewCell.h"
-#import "OSDTableViewController.h"
+#import "OSDViewController.h"
+#import "MonitorViewController.h"
+#import "PoolViewController.h"
+#import "CustomAlertView.h"
 #import "HealthModel.h"
+#import "HealthReportModel.h"
+
 
 static NSString * const reuseIdentifier = @"Cell";
 
 @interface HealthViewController ()
+
+@property (nonatomic, strong) CustomAlertView *healthAlert;
 
 @end
 
@@ -62,23 +69,42 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     HealthCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    [cell showMoreButton:indexPath.row];
     [cell fontSizeWithCellIndex:indexPath.row];
     cell.titleImage.image = [UIImage imageNamed:[HealthModel healthListImages][indexPath.row]];
     cell.statusImage.image = [UIImage imageNamed:[self infosWithStatus:[HealthModel healthListStatusInfos][indexPath.row]][@"Image"]];
     cell.titleLabel.text = [HealthModel healthListTitles][indexPath.row];
     cell.contentLabel.text = [HealthModel healthListContentInfos][indexPath.row];
     cell.subContentLabel.text = [HealthModel healthListSubContentInfos][indexPath.row];
-
+    [cell showMoreStatus:[[HealthModel healthCounts][indexPath.row] integerValue] message:[HealthModel healthMessages][indexPath.row]];
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        NSLog(@"Health clicked");
-    } else if(indexPath.row == 1) {
-        OSDTableViewController *osdViewController = [[OSDTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        self.healthAlert = [[CustomAlertView alloc] init];
+        self.healthAlert.titleImage.image = [UIImage imageNamed:[HealthModel healthListImages][indexPath.row]];
+        self.healthAlert.titleLbael.text = @"Health Report";
+        self.healthAlert.headerTitles = @[@"SEVERITY", @"DETAILS"];
+        self.healthAlert.titleDatas = [HealthReportModel severityDatas];
+        self.healthAlert.detailDatas = [HealthReportModel detailsDatas];
+        [self.healthAlert show];
+    } else if (indexPath.row == 1) {
+        OSDViewController *osdViewController = [[OSDViewController alloc] initWithStyle:UITableViewStylePlain];
         [self.navigationController pushViewController:osdViewController animated:YES];
+    } else if (indexPath.row == 2) {
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.minimumLineSpacing = 10;
+        layout.minimumInteritemSpacing = 10;
+        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+        MonitorViewController *monitorController = [[MonitorViewController alloc] initWithCollectionViewLayout:layout];
+        [self.navigationController pushViewController:monitorController animated:YES];
+    } else if (indexPath.row == 3) {
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.minimumLineSpacing = 10;
+        layout.minimumInteritemSpacing = 10;
+        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+        PoolViewController *poolController = [[PoolViewController alloc] initWithCollectionViewLayout:layout];
+        [self.navigationController pushViewController:poolController animated:YES];
     }
 }
 

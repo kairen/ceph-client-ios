@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B04F33D81B1EE4CB00F9E9EB"
-               BuildableName = "CephMonitor.app"
+               BuildableName = "&#x884c;&#x52d5;&#x5100;&#x8868;&#x677f;.app"
                BlueprintName = "CephMonitor"
                ReferencedContainer = "container:CephMonitor.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B04F33D81B1EE4CB00F9E9EB"
-            BuildableName = "CephMonitor.app"
+            BuildableName = "&#x884c;&#x52d5;&#x5100;&#x8868;&#x677f;.app"
             BlueprintName = "CephMonitor"
             ReferencedContainer = "container:CephMonitor.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B04F33D81B1EE4CB00F9E9EB"
-            BuildableName = "CephMonitor.app"
+            BuildableName = "&#x884c;&#x52d5;&#x5100;&#x8868;&#x677f;.app"
             BlueprintName = "CephMonitor"
             ReferencedContainer = "container:CephMonitor.xcodeproj">
          </BuildableReference>
@@ -96,7 +96,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B04F33D81B1EE4CB00F9E9EB"
-            BuildableName = "CephMonitor.app"
+            BuildableName = "&#x884c;&#x52d5;&#x5100;&#x8868;&#x677f;.app"
             BlueprintName = "CephMonitor"
             ReferencedContainer = "container:CephMonitor.xcodeproj">
          </BuildableReference>

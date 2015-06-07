@@ -8,6 +8,6 @@
 
 #import "BaseTableViewController.h"
 
-@interface OSDTableViewController : BaseTableViewController
+@interface OSDViewController : BaseTableViewController
 
 @end

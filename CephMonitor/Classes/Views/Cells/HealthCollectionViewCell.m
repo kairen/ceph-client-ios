@@ -64,13 +64,12 @@
         /**
          *  More Label
          */
-        self.moreLabel = [[UILabel alloc] initWithFrame:CGRectMake((self.width / 2) - 65,self.height - 35 , 130, 30)];
+        self.moreLabel = [[UILabel alloc] initWithFrame:CGRectMake((self.width / 2) - 90,self.height - 35 , 180, 30)];
         self.moreLabel.backgroundColor = [UIColor customYellowColor];
         self.moreLabel.layer.masksToBounds = YES;
         self.moreLabel.textAlignment = NSTextAlignmentCenter;
         self.moreLabel.layer.cornerRadius = 5;
         self.moreLabel.textColor = [UIColor whiteColor];
-        self.moreLabel.text = @"有三個警告訊息!";
         [self addSubview:self.moreLabel];
     }
     return self;
@@ -79,6 +78,23 @@
 #pragma mark - Show More Button
 - (void)showMoreButton:(NSInteger)index {
     self.moreLabel.hidden = (index == 0) ? NO : YES;
+}
+
+- (void)showMoreStatus:(HealthCheckType)health message:(NSString *)message {
+    
+    if (health == HealthCheckOkay) {
+        self.moreLabel.hidden = YES;
+        return ;
+    }
+    
+    if (health == HealthCheckError) {
+        self.moreLabel.backgroundColor = [UIColor customRedColor];
+    } else {
+        self.moreLabel.backgroundColor = [UIColor customYellowColor];
+    }
+    self.moreLabel.text = message;
+    
+    
 }
 
 #pragma mark - Change Frist Cell Font Size
