@@ -39,6 +39,7 @@ static NSString * const RESTIPAddress = @"http://163.17.136.249:5100";
     
     [RESTClient initInstaceWithServerDomain:RESTIPAddress];
     [RESTClient shareInstance].restapiBaseURL = @"/api/v1";
+    [self remoteNotificationConfigure];
     
     return YES;
 }
@@ -60,5 +61,46 @@ static NSString * const RESTIPAddress = @"http://163.17.136.249:5100";
     }
     self.statusMaskView.backgroundColor = color;
 }
+
+#pragma mark - Remote Notification
+- (void)remoteNotificationConfigure {
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge) categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSLog(@"Token: %@", deviceToken);
+    NSString *toeknString = [NSString stringWithFormat:@"%@", deviceToken];
+    if ([toeknString length] == 0)
+        return;
+    
+    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"<>"];
+    toeknString = [toeknString stringByTrimmingCharactersInSet:set];
+    toeknString = [toeknString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSString *stingURL = @"";
+    NSURL *url = [NSURL URLWithString:stingURL];
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+    [urlRequest setTimeoutInterval:30.0f];
+    [urlRequest setHTTPMethod:@"POST"];
+    //[urlRequest setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error){
+        if ([data length] >0 && error == nil) {
+            NSLog(@"%@",data);
+        }
+    }];
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"%@", error.description);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    NSLog(@"%@",userInfo);
+}
+
 
 @end

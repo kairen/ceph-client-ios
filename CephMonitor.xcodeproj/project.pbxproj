@@ -520,6 +520,12 @@
 				TargetAttributes = {
 					B04F33D81B1EE4CB00F9E9EB = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = S8FBP4YLUA;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					B04F33F11B1EE4CB00F9E9EB = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -767,10 +773,12 @@
 			baseConfigurationReference = 883E5E6D07738F4AA0A9A324 /* Pods-CephMonitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = CephMonitor/CephMonitor.pch;
 				INFOPLIST_FILE = CephMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "行動儀表板";
+				PROVISIONING_PROFILE = "cc93c9e6-add9-4562-b662-9caeedf6e3bc";
 			};
 			name = Debug;
 		};
@@ -779,10 +787,12 @@
 			baseConfigurationReference = 46C23F11D268A6D7DEDD2CC3 /* Pods-CephMonitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = CephMonitor/CephMonitor.pch;
 				INFOPLIST_FILE = CephMonitor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "行動儀表板";
+				PROVISIONING_PROFILE = "cc93c9e6-add9-4562-b662-9caeedf6e3bc";
 			};
 			name = Release;
 		};
