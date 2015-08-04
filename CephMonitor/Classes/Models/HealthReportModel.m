@@ -11,12 +11,17 @@
 @implementation HealthReportModel
 
 
-+ (NSArray *)severityDatas {
-    return @[@"WARN", @"WARN", @"WARN", @"WARN"];
-}
-
-+ (NSArray *)detailsDatas {
-    return @[@"960 pgs degraded", @"960 pgs stuck unclean", @"recovery 5/10 objects degraded (50.000%)", @"noout flag(s) set"];
+- (void)mappingObject {
+    NSMutableArray *severitys = [NSMutableArray array];
+    for(NSDictionary *dict in self.array) {
+        [severitys addObject:dict[@"severity"]];
+    }
+    self.severityDatas = severitys;
+    NSMutableArray *details = [NSMutableArray array];
+    for(NSDictionary *dict in self.array) {
+        [details addObject:dict[@"summary"]];
+    }
+    self.detailsDatas = details;
 }
 
 @end

@@ -51,15 +51,18 @@
          */
         self.addressTextField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMinX(self.titleLabel.frame), CGRectGetMaxY(self.titleLabel.frame) + 15, CGRectGetWidth(self.titleLabel.frame), TEXTFIELD_HEIGHT)];
         [self createTextFieldImage:self.addressTextField imageName:@"Address_logo"];
+        self.addressTextField.text = @"http://163.17.136.249:8080";
         self.addressTextField.placeholder = @"http://loaclhost:5100";
         
         self.userTextField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMinX(self.addressTextField.frame), CGRectGetMaxY(self.addressTextField.frame) + 15, CGRectGetWidth(self.addressTextField.frame), CGRectGetHeight(self.addressTextField.frame))];
         [self createTextFieldImage:self.userTextField imageName:@"User_logo"];
         self.userTextField.placeholder = @"使用者帳號";
+        self.userTextField.text = @"admin";
         
         self.passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMinX(self.userTextField.frame), CGRectGetMaxY(self.userTextField.frame) + 15, CGRectGetWidth(self.userTextField.frame), CGRectGetHeight(self.userTextField.frame))];
         [self createTextFieldImage:self.passwordTextField imageName:@"Password_logo"];
         self.passwordTextField.placeholder = @"使用者密碼";
+        self.passwordTextField.text = @"admin";
         self.passwordTextField.secureTextEntry = YES;
         /**
          *  Signin Button

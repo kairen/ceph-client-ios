@@ -14,6 +14,7 @@
 + (instancetype)createModelWithArray:(NSArray *)array;
 
 - (void)mappingObjectWithIndex:(NSInteger)index;
+- (void)mappingObject;
 
 @property (nonatomic, strong) NSDictionary *dict;
 @property (nonatomic, strong) NSArray *array;

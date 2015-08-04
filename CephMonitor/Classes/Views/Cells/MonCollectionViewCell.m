@@ -72,6 +72,7 @@
             valueLabel.text = datas[index];
             valueLabel.numberOfLines = 0;
             valueLabel.adjustsFontSizeToFitWidth = YES;
+            valueLabel.font = [UIFont fontHelveticaNeueLightSize:16];
             [self addSubview:valueLabel];
             [self.valueObjects addObject:valueLabel];
             

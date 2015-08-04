@@ -24,10 +24,15 @@
         if([object isKindOfClass:[NSDictionary class]]) {
             self.dict = object[@"output"];
         } else {
-            
+            self.array = object;
+            NSLog(@"%@", self.array);
         }
     }
     return self;
+}
+
+- (void)mappingObject {
+    
 }
 
 - (void)mappingObjectWithIndex:(NSInteger)index {

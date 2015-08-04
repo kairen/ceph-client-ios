@@ -11,9 +11,6 @@
 #import "GHRevealViewController.h"
 #import "AnimateNavigationController.h"
 #import "SliderMenuViewController.h"
-#import "RESTClient.h"
-
-static NSString * const RESTIPAddress = @"http://163.17.136.249:5100";
 
 @interface AppDelegate () <GHRevealViewDelegate>
 
@@ -36,9 +33,7 @@ static NSString * const RESTIPAddress = @"http://163.17.136.249:5100";
     
     self.window.rootViewController = self.revealController;
     [self.window makeKeyAndVisible];
-    
-    [RESTClient initInstaceWithServerDomain:RESTIPAddress];
-    [RESTClient shareInstance].restapiBaseURL = @"/api/v1";
+   
     [self remoteNotificationConfigure];
     
     return YES;
@@ -99,6 +94,7 @@ static NSString * const RESTIPAddress = @"http://163.17.136.249:5100";
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    application.applicationIconBadgeNumber = 0;
     NSLog(@"%@",userInfo);
 }
 

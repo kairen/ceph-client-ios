@@ -18,6 +18,14 @@ static NSString * const RESTAlertPutTitle = @"HTTP PUT Status";
 static NSString * const RESTAlertPostTitle = @"HTTP POST Status";
 static NSString * const RESTAlertDeleteTitle = @"HTTP DELETE Status";
 
+@interface RESTClient ()
+
+
+@property (nonatomic, copy) NSString *username;
+@property (nonatomic, copy) NSString *password;
+
+@end
+
 @implementation RESTClient
 
 /**
@@ -26,10 +34,11 @@ static NSString * const RESTAlertDeleteTitle = @"HTTP DELETE Status";
  *  @return singleton instance
  */
 + (RESTClient *)initInstaceWithServerDomain:(NSString *)serverDomain {
-    static id client = nil;
+    static RESTClient *client = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         client = [[RESTClient alloc] initWithBaseURL:[NSURL URLWithString:serverDomain]];
+        client.domain = serverDomain;
     });
     return client;
 }
@@ -49,12 +58,17 @@ static NSString * const RESTAlertDeleteTitle = @"HTTP DELETE Status";
     self = [super initWithBaseURL:url];
     if (self) {
         self.requestSerializer = [AFHTTPRequestSerializer serializer];
-        self.requestSerializer.timeoutInterval = RESTRequestTimeout;
         [self.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-        
         self.responseSerializer = [AFJSONResponseSerializer serializer];
+        self.requestSerializer.timeoutInterval = RESTRequestTimeout;
     }
     return self;
+}
+
+- (void)setUsername:(NSString *)username passwd:(NSString *)passwd {
+    self.username = username;
+    self.password = passwd;
+//    [self.requestSerializer setAuthorizationHeaderFieldWithUsername:username password:passwd];
 }
 
 /**
@@ -70,7 +84,7 @@ static NSString * const RESTAlertDeleteTitle = @"HTTP DELETE Status";
     NSAssert(self.restapiBaseURL != nil, @"You must set base url");
     
     NSString *apiURL = [self.restapiBaseURL stringByAppendingPathComponent:url];
-    NSLog(@"URL : %@", apiURL);
+    NSLog(@"URL : %@%@",self.domain, apiURL);
     
     typeof(self) __weak weakSelf = self;
     [SVProgressHUD show];

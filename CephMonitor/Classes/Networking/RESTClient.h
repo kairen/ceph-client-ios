@@ -26,9 +26,12 @@ typedef void(^RESTResponse)(id responseObject);
 
 + (RESTClient *)initInstaceWithServerDomain:(NSString *)serverDomain;
 + (RESTClient *)shareInstance;
+
 - (void)requestURL:(NSString *)url method:(RESTRequestMethod)method parameters:(id)parameters success:(RESTResponse)response;
+- (void) setUsername:(NSString *)username passwd:(NSString *)passwd;
 
 @property(nonatomic, copy) NSString *restapiBaseURL;
+@property (nonatomic, copy) NSString *domain;
 @property(nonatomic, assign) RESTDataFormatter requestFormat;
 
 @end

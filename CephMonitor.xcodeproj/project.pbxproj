@@ -56,6 +56,8 @@
 		B0AA9DD11B248B990061D154 /* PoolManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DD01B248B990061D154 /* PoolManageViewController.m */; };
 		B0AA9DD41B248BE70061D154 /* PoolArgsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DD31B248BE70061D154 /* PoolArgsModel.m */; };
 		B0AA9DD71B248C5B0061D154 /* EditCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DD61B248C5B0061D154 /* EditCollectionViewCell.m */; };
+		B0AA9DDA1B24AF110061D154 /* ProfileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DD91B24AF110061D154 /* ProfileHelper.m */; };
+		B0AA9DDE1B24AF700061D154 /* TLTagsControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AA9DDD1B24AF700061D154 /* TLTagsControl.m */; };
 		DFAADC2FBAE0B2E0DB8BF0DA /* libPods-CephMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +174,10 @@
 		B0AA9DD31B248BE70061D154 /* PoolArgsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolArgsModel.m; sourceTree = "<group>"; };
 		B0AA9DD51B248C5B0061D154 /* EditCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCollectionViewCell.h; sourceTree = "<group>"; };
 		B0AA9DD61B248C5B0061D154 /* EditCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCollectionViewCell.m; sourceTree = "<group>"; };
+		B0AA9DD81B24AF110061D154 /* ProfileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHelper.h; sourceTree = "<group>"; };
+		B0AA9DD91B24AF110061D154 /* ProfileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHelper.m; sourceTree = "<group>"; };
+		B0AA9DDC1B24AF700061D154 /* TLTagsControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTagsControl.h; sourceTree = "<group>"; };
+		B0AA9DDD1B24AF700061D154 /* TLTagsControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTagsControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +301,8 @@
 			children = (
 				B05DBFDF1B22F64F001E640D /* TransitionAnimation.h */,
 				B05DBFE01B22F64F001E640D /* TransitionAnimation.m */,
+				B0AA9DD81B24AF110061D154 /* ProfileHelper.h */,
+				B0AA9DD91B24AF110061D154 /* ProfileHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -343,6 +351,7 @@
 		B04F34071B1EE69800F9E9EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B0AA9DDB1B24AF700061D154 /* TLTagsContol */,
 				B05DBFD51B22E63F001E640D /* AlertViews */,
 				B04F34331B1EF83800F9E9EB /* Cells */,
 				B05DBFCB1B22A509001E640D /* CollectViewLayouts */,
@@ -459,6 +468,15 @@
 				B0AA9DD01B248B990061D154 /* PoolManageViewController.m */,
 			);
 			path = ManageDashboards;
+			sourceTree = "<group>";
+		};
+		B0AA9DDB1B24AF700061D154 /* TLTagsContol */ = {
+			isa = PBXGroup;
+			children = (
+				B0AA9DDC1B24AF700061D154 /* TLTagsControl.h */,
+				B0AA9DDD1B24AF700061D154 /* TLTagsControl.m */,
+			);
+			path = TLTagsContol;
 			sourceTree = "<group>";
 		};
 		DCD58D08C3B08DD69CDD9062 /* Frameworks */ = {
@@ -647,9 +665,11 @@
 				B0AA9DBF1B248A170061D154 /* PoolsModel.m in Sources */,
 				B0AA9DD71B248C5B0061D154 /* EditCollectionViewCell.m in Sources */,
 				B05DBFBE1B21E5D3001E640D /* LogViewController.m in Sources */,
+				B0AA9DDA1B24AF110061D154 /* ProfileHelper.m in Sources */,
 				B04F342A1B1EE73800F9E9EB /* RESTClient+PG.m in Sources */,
 				B05DBFDD1B22E63F001E640D /* AlertTableViewHeader.m in Sources */,
 				B04F34271B1EE73800F9E9EB /* RESTClient+MDS.m in Sources */,
+				B0AA9DDE1B24AF700061D154 /* TLTagsControl.m in Sources */,
 				B05DBFDE1B22E63F001E640D /* CustomAlertView.m in Sources */,
 				B0AA9DCA1B248B600061D154 /* HealthViewController.m in Sources */,
 				B04F34281B1EE73800F9E9EB /* RESTClient+MON.m in Sources */,

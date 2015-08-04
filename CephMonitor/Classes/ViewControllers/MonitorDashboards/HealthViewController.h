@@ -7,7 +7,9 @@
 //
 
 #import "BaseCollectionViewController.h"
+#import "HealthModel.h"
+
 
 @interface HealthViewController : BaseCollectionViewController
-
+@property (nonatomic, strong) HealthModel *healthModel;
 @end

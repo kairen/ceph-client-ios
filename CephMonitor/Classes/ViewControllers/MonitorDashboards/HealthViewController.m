@@ -12,9 +12,9 @@
 #import "MonitorViewController.h"
 #import "PoolViewController.h"
 #import "CustomAlertView.h"
+#import "RESTClient+Root.h"
 #import "HealthModel.h"
 #import "HealthReportModel.h"
-
 
 static NSString * const reuseIdentifier = @"Cell";
 
@@ -33,6 +33,8 @@ static NSString * const reuseIdentifier = @"Cell";
     self.collectionView.backgroundColor = [UIColor pageBackgroudColor];
     
     [self.collectionView registerClass:[HealthCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    
+   
 }
 
 - (NSDictionary *)infosWithStatus:(NSString *)status {
@@ -71,22 +73,29 @@ static NSString * const reuseIdentifier = @"Cell";
     HealthCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     [cell fontSizeWithCellIndex:indexPath.row];
     cell.titleImage.image = [UIImage imageNamed:[HealthModel healthListImages][indexPath.row]];
-    cell.statusImage.image = [UIImage imageNamed:[self infosWithStatus:[HealthModel healthListStatusInfos][indexPath.row]][@"Image"]];
+    
+    cell.statusImage.image = [UIImage imageNamed:[self infosWithStatus:self.healthModel.healthListStatusInfos[indexPath.row]][@"Image"]];
+    
     cell.titleLabel.text = [HealthModel healthListTitles][indexPath.row];
-    cell.contentLabel.text = [HealthModel healthListContentInfos][indexPath.row];
+    
+    cell.contentLabel.text = self.healthModel.healthListContentInfos[indexPath.row];
+    
     cell.subContentLabel.text = [HealthModel healthListSubContentInfos][indexPath.row];
-    [cell showMoreStatus:[[HealthModel healthCounts][indexPath.row] integerValue] message:[HealthModel healthMessages][indexPath.row]];
+    
+    [cell showMoreStatus:[self.healthModel.healthCounts[indexPath.row] integerValue] message:self.healthModel.healthMessages[indexPath.row]];
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
+        HealthReportModel *healthReportModel = [HealthReportModel createModelWithArray:self.healthModel.summary];
+        [healthReportModel mappingObject];
         self.healthAlert = [[CustomAlertView alloc] init];
         self.healthAlert.titleImage.image = [UIImage imageNamed:[HealthModel healthListImages][indexPath.row]];
         self.healthAlert.titleLbael.text = @"Health Report";
         self.healthAlert.headerTitles = @[@"SEVERITY", @"DETAILS"];
-        self.healthAlert.titleDatas = [HealthReportModel severityDatas];
-        self.healthAlert.detailDatas = [HealthReportModel detailsDatas];
+        self.healthAlert.titleDatas = healthReportModel.severityDatas;
+        self.healthAlert.detailDatas = healthReportModel.detailsDatas;
         [self.healthAlert show];
     } else if (indexPath.row == 1) {
         OSDViewController *osdViewController = [[OSDViewController alloc] initWithStyle:UITableViewStylePlain];

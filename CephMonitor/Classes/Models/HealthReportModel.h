@@ -10,8 +10,8 @@
 
 @interface HealthReportModel : HealthModel
 
-+ (NSArray *)severityDatas;
-+ (NSArray *)detailsDatas;
 
+@property (nonatomic, copy) NSArray *severityDatas;
+@property (nonatomic, copy) NSArray *detailsDatas;
 
 @end

@@ -93,8 +93,6 @@
         self.moreLabel.backgroundColor = [UIColor customYellowColor];
     }
     self.moreLabel.text = message;
-    
-    
 }
 
 #pragma mark - Change Frist Cell Font Size

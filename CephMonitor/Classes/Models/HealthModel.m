@@ -10,6 +10,71 @@
 
 @implementation HealthModel
 
+- (void) mappingObject {
+    NSDictionary *health = self.dict[@"health"];
+    self.overall_status = health[@"overall_status"];
+    self.summary = health[@"summary"];
+    
+    NSDictionary *osdmap = self.dict[@"osdmap"][@"osdmap"];
+    NSInteger osdUp = [osdmap[@"num_up_osds"] integerValue];
+    NSInteger osdIn = [osdmap[@"num_in_osds"] integerValue];
+    NSInteger osdCount = osdUp - osdIn;
+    
+    NSArray *mon = self.dict[@"monmap"][@"mons"];
+    NSInteger monCount = mon.count;
+    
+    NSDictionary *pgmap = self.dict[@"pgmap"];
+    NSInteger pg_num = [pgmap[@"num_pgs"] integerValue];
+    NSInteger active_num = 0;
+    
+    for(NSDictionary *dict in pgmap[@"pgs_by_state"]) {
+        if([dict[@"state_name"] isEqualToString:@"active+clean"]) {
+            active_num = [dict[@"count"] integerValue];
+        }
+    }
+    
+    
+    NSString *helthMsg = [self checkCount:self.summary.count];
+    NSString *osdMsg = [self checkCount: osdCount];
+    
+    self.healthMessages = @[helthMsg,
+                            osdMsg,
+                            @"",
+                            @"",
+                            @"",
+                            @"",
+                            @""];
+    
+    self.healthCounts = @[@((self.summary.count > 0) ? 1 : 0),
+                          @((osdCount > 0) ? 2:0),
+                          @((monCount > 0) ? 0:2),
+                          @(0),
+                          @(0),
+                          @(0),
+                          @(0)];
+    
+    self.healthListStatusInfos = @[(self.summary.count > 0) ? @"WARNING" : @"OK",
+                                   (osdCount > 0) ? @"ERROR" : @"OK",
+                                   (monCount > 0) ? @"OK" : @"OK",
+                                   @"OK",
+                                   @"OK",
+                                   @"OK",
+                                   @"OK"];
+    
+
+    self.healthListContentInfos = @[([self.overall_status isEqualToString:@"HEALTH_WARN" ]? @"WARN" : @"OK"),
+                                    [NSString stringWithFormat:@"%ld/%ld",osdIn ,osdUp],
+                                    [NSString stringWithFormat:@"%ld/%ld",mon.count ,mon.count],
+                                    @"8",
+                                    [NSString stringWithFormat:@"%ld/%ld",active_num ,pg_num],
+                                    @"6.1Gb",
+                                    @"5"];
+}
+
+- (NSString *)checkCount:(NSInteger)count {
+    return [NSString stringWithFormat:@"有『%ld』個錯誤訊息!", count];
+}
+
 + (NSArray *)healthListTitles {
     return @[@"HEALTH",
              @"OSD",
@@ -30,25 +95,8 @@
              @"Host_logo"];
 }
 
-+ (NSArray *)healthListStatusInfos {
-    return @[@"WARNING", @"OK", @"OK", @"OK", @"OK", @"OK", @"OK"];
-}
-
-+ (NSArray *)healthListContentInfos {
-    return @[@"OK", @"3/3", @"1/1", @"6", @"960/960", @"6.1Gb", @"4"];
-}
-
 + (NSArray *)healthListSubContentInfos {
-    return @[@"in 8 hours", @"In & Up", @"Quorum", @"Active", @"Active & Clean", @"1003.7GB", @"1 MON/3 OSD"];
-}
-
-+ (NSArray *)healthCounts {
-    return @[@(1), @(0), @(0), @(0), @(0), @(0), @(0)];
-}
-
-+ (NSArray *)healthMessages {
-    return @[@"有『三個』警告訊息!", @"", @"", @"",
-             @"", @"", @""];
+    return @[@"in 2 hours", @"In & Up", @"Quorum", @"Active", @"Active & Clean", @"1003.7GB", @"2 MON/3 OSD"];
 }
 
 @end

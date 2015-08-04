@@ -10,15 +10,16 @@
 
 @interface HealthModel : BaseModel
 
+@property (nonatomic, copy) NSString *overall_status;
+@property (nonatomic, copy) NSArray *healthMessages;
+@property (nonatomic, copy) NSArray *healthListStatusInfos;
+@property (nonatomic, copy) NSArray *healthListContentInfos;
+@property (nonatomic, copy) NSArray *healthCounts;
+@property (nonatomic, copy) NSArray *summary;
+
 + (NSArray *)healthListTitles;
 + (NSArray *)healthListImages;
 
-+ (NSArray *)healthListStatusInfos;
-+ (NSArray *)healthListContentInfos;
 + (NSArray *)healthListSubContentInfos;
-
-
-+ (NSArray *)healthCounts;
-+ (NSArray *)healthMessages;
 
 @end

@@ -10,6 +10,9 @@
 #import "HealthViewController.h"
 #import "HealthViewFlowLayout.h"
 #import "LoginView.h"
+#import "HealthModel.h"
+#import "RESTClient.h"
+#import "RESTClient+Root.h"
 
 @interface LoginViewController () <UITextFieldDelegate>
 
@@ -43,9 +46,21 @@
         }
     }
     else if (sender == self.loginView.signinButton) {
-        HealthViewFlowLayout *flowLayout = [[HealthViewFlowLayout alloc] init];
-        HealthViewController *healthController = [[HealthViewController alloc] initWithCollectionViewLayout:flowLayout];
-        [self.navigationController pushViewController:healthController animated:YES];
+        NSString *serverDomain = self.loginView.addressTextField.text;
+        
+        [RESTClient initInstaceWithServerDomain:serverDomain];
+        [RESTClient shareInstance].restapiBaseURL = @"/api/v1";
+        [[RESTClient shareInstance] clusterUniqueIdentifierWithResponse:^(id responseObject) {
+            typeof(self) __weak weakSelf = self;
+            [[RESTClient shareInstance] clusterStatusWithResponse:^(id responseObject) {
+                HealthModel *healthModel = [HealthModel createModelWithDict:responseObject];
+                [healthModel mappingObject];
+                HealthViewFlowLayout *flowLayout = [[HealthViewFlowLayout alloc] init];
+                HealthViewController *healthController = [[HealthViewController alloc] initWithCollectionViewLayout:flowLayout];
+                healthController.healthModel = healthModel;
+                [weakSelf.navigationController pushViewController:healthController animated:YES];
+            }];
+        }];
     }
 }
 

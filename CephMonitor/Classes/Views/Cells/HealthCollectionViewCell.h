@@ -14,7 +14,6 @@ typedef NS_ENUM(NSInteger, HealthCheckType) {
     HealthCheckError
 };
 
-
 @interface HealthCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) UIImageView *titleImage;
