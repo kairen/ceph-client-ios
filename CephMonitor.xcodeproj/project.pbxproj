@@ -11,7 +11,6 @@
 		B04F33E21B1EE4CB00F9E9EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F33E11B1EE4CB00F9E9EB /* AppDelegate.m */; };
 		B04F33EA1B1EE4CB00F9E9EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04F33E91B1EE4CB00F9E9EB /* Images.xcassets */; };
 		B04F33ED1B1EE4CB00F9E9EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04F33EB1B1EE4CB00F9E9EB /* LaunchScreen.xib */; };
-		B04F33F91B1EE4CB00F9E9EB /* CephMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F33F81B1EE4CB00F9E9EB /* CephMonitorTests.m */; };
 		B04F34131B1EE6E400F9E9EB /* UIColor+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F340C1B1EE6E400F9E9EB /* UIColor+Extra.m */; };
 		B04F34141B1EE6E400F9E9EB /* UIFont+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F340E1B1EE6E400F9E9EB /* UIFont+Extra.m */; };
 		B04F34151B1EE6E400F9E9EB /* UIImage+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = B04F34101B1EE6E400F9E9EB /* UIImage+Extra.m */; };
@@ -61,16 +60,6 @@
 		DFAADC2FBAE0B2E0DB8BF0DA /* libPods-CephMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B04F33F31B1EE4CB00F9E9EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B04F33D11B1EE4CB00F9E9EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B04F33D81B1EE4CB00F9E9EB;
-			remoteInfo = CephMonitor;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0D8CFC87B7EC3DF6D8026AA5 /* libPods-CephMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CephMonitor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C23F11D268A6D7DEDD2CC3 /* Pods-CephMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CephMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-CephMonitor/Pods-CephMonitor.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,9 +71,6 @@
 		B04F33E11B1EE4CB00F9E9EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B04F33E91B1EE4CB00F9E9EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B04F33EC1B1EE4CB00F9E9EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B04F33F21B1EE4CB00F9E9EB /* CephMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CephMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B04F33F71B1EE4CB00F9E9EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B04F33F81B1EE4CB00F9E9EB /* CephMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CephMonitorTests.m; sourceTree = "<group>"; };
 		B04F340B1B1EE6E400F9E9EB /* UIColor+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extra.h"; sourceTree = "<group>"; };
 		B04F340C1B1EE6E400F9E9EB /* UIColor+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extra.m"; sourceTree = "<group>"; };
 		B04F340D1B1EE6E400F9E9EB /* UIFont+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Extra.h"; sourceTree = "<group>"; };
@@ -189,13 +175,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B04F33EF1B1EE4CB00F9E9EB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -212,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				B04F33DB1B1EE4CB00F9E9EB /* CephMonitor */,
-				B04F33F51B1EE4CB00F9E9EB /* CephMonitorTests */,
 				B04F33DA1B1EE4CB00F9E9EB /* Products */,
 				03FBE887B46F4960C4346EA0 /* Pods */,
 				DCD58D08C3B08DD69CDD9062 /* Frameworks */,
@@ -223,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				B04F33D91B1EE4CB00F9E9EB /* 行動儀表板.app */,
-				B04F33F21B1EE4CB00F9E9EB /* CephMonitorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,23 +224,6 @@
 				B04F33DD1B1EE4CB00F9E9EB /* Info.plist */,
 				B04F33DE1B1EE4CB00F9E9EB /* main.m */,
 				B04F342F1B1EEA9800F9E9EB /* CephMonitor.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B04F33F51B1EE4CB00F9E9EB /* CephMonitorTests */ = {
-			isa = PBXGroup;
-			children = (
-				B04F33F81B1EE4CB00F9E9EB /* CephMonitorTests.m */,
-				B04F33F61B1EE4CB00F9E9EB /* Supporting Files */,
-			);
-			path = CephMonitorTests;
-			sourceTree = "<group>";
-		};
-		B04F33F61B1EE4CB00F9E9EB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B04F33F71B1EE4CB00F9E9EB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -509,24 +469,6 @@
 			productReference = B04F33D91B1EE4CB00F9E9EB /* 行動儀表板.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B04F33F11B1EE4CB00F9E9EB /* CephMonitorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B04F33FF1B1EE4CB00F9E9EB /* Build configuration list for PBXNativeTarget "CephMonitorTests" */;
-			buildPhases = (
-				B04F33EE1B1EE4CB00F9E9EB /* Sources */,
-				B04F33EF1B1EE4CB00F9E9EB /* Frameworks */,
-				B04F33F01B1EE4CB00F9E9EB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B04F33F41B1EE4CB00F9E9EB /* PBXTargetDependency */,
-			);
-			name = CephMonitorTests;
-			productName = CephMonitorTests;
-			productReference = B04F33F21B1EE4CB00F9E9EB /* CephMonitorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -538,16 +480,11 @@
 				TargetAttributes = {
 					B04F33D81B1EE4CB00F9E9EB = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = S8FBP4YLUA;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
 						};
-					};
-					B04F33F11B1EE4CB00F9E9EB = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = B04F33D81B1EE4CB00F9E9EB;
 					};
 				};
 			};
@@ -565,7 +502,6 @@
 			projectRoot = "";
 			targets = (
 				B04F33D81B1EE4CB00F9E9EB /* CephMonitor */,
-				B04F33F11B1EE4CB00F9E9EB /* CephMonitorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -577,13 +513,6 @@
 			files = (
 				B04F33ED1B1EE4CB00F9E9EB /* LaunchScreen.xib in Resources */,
 				B04F33EA1B1EE4CB00F9E9EB /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B04F33F01B1EE4CB00F9E9EB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,23 +607,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B04F33EE1B1EE4CB00F9E9EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B04F33F91B1EE4CB00F9E9EB /* CephMonitorTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B04F33F41B1EE4CB00F9E9EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B04F33D81B1EE4CB00F9E9EB /* CephMonitor */;
-			targetProxy = B04F33F31B1EE4CB00F9E9EB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B04F33EB1B1EE4CB00F9E9EB /* LaunchScreen.xib */ = {
@@ -816,40 +729,6 @@
 			};
 			name = Release;
 		};
-		B04F34001B1EE4CB00F9E9EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CephMonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CephMonitor.app/CephMonitor";
-			};
-			name = Debug;
-		};
-		B04F34011B1EE4CB00F9E9EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CephMonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CephMonitor.app/CephMonitor";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -867,15 +746,6 @@
 			buildConfigurations = (
 				B04F33FD1B1EE4CB00F9E9EB /* Debug */,
 				B04F33FE1B1EE4CB00F9E9EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B04F33FF1B1EE4CB00F9E9EB /* Build configuration list for PBXNativeTarget "CephMonitorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B04F34001B1EE4CB00F9E9EB /* Debug */,
-				B04F34011B1EE4CB00F9E9EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
